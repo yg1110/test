@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-function App() {
+function App({ SsafyShopper, Newspace, 냉장고를부탁해, ItForYou }) {
   return (
     <div className="wrapper">
       <header className="top">
@@ -33,12 +33,12 @@ function App() {
             </a>
           </li>
           <li className="social">
-            <a href="https://github.com/kathykato" title="GitHub">
+            <a href="https://github.com/yg1110" title="GitHub">
               <i className="fa fa-github"></i>
             </a>
           </li>
           <li className="social">
-            <a href="https://github.com/kathykato" title="GitHub">
+            <a href="https://yg1110.tistory.com/" title="tistory">
               <i className="fa fa-tumblr"></i>
             </a>
           </li>
@@ -48,25 +48,32 @@ function App() {
       <section className="gallery">
         <ul>
           <li className="gallery-image">
-            <img src="https://source.unsplash.com/hclTKUfuf1U" alt="Katosnap" />
+            <img
+              src={SsafyShopper}
+              width="720px"
+              height="480px"
+              alt="Ssafy-Shopper"
+            />
           </li>
           <li className="gallery-image">
-            <img src="https://source.unsplash.com/DOExRUPPwYY" alt="Katosnap" />
+            <img src={Newspace} width="720px" height="480px" alt="Newspace" />
           </li>
           <li className="gallery-image">
-            <img src="https://source.unsplash.com/a6x7YPiNxwI" alt="Katosnap" />
+            <img
+              src={냉장고를부탁해}
+              width="720px"
+              height="480px"
+              alt="냉장고를부탁해"
+            />
           </li>
           <li className="gallery-image">
-            <img src="https://source.unsplash.com/AiORnUT6sC0" alt="Katosnap" />
-          </li>
-          <li className="gallery-image">
-            <img src="https://source.unsplash.com/DGVA6sqYdUA" alt="Katosnap" />
+            <img src={ItForYou} width="720px" height="480px" alt="ItForYou" />
           </li>
         </ul>
       </section>
 
       <section className="details">
-        <h2>Sign up today for the latest updates!</h2>
+        <h2>test</h2>
       </section>
 
       <footer>
@@ -75,5 +82,12 @@ function App() {
     </div>
   );
 }
+
+App.defaultProps = {
+  SsafyShopper: require("./assets/images/Ssafy-Shopper.png"),
+  Newspace: require("./assets/images/Newspace.png"),
+  냉장고를부탁해: require("./assets/images/냉장고를부탁해.png"),
+  ItForYou: require("./assets/images/ItForYou.png")
+};
 
 export default App;
