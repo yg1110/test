@@ -1,22 +1,26 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.bf0f7d8c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.cec89c9b.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.cec89c9b.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.87692c57.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.87692c57.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.efb1fe8d.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.efb1fe8d.js.map",
     "static/js/2.82a0fc8e.chunk.js": "/Portfolio/static/js/2.82a0fc8e.chunk.js",
     "static/js/2.82a0fc8e.chunk.js.map": "/Portfolio/static/js/2.82a0fc8e.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.1ff7f6b12220b3bb70768ed1cb4bf85e.js": "/Portfolio/precache-manifest.1ff7f6b12220b3bb70768ed1cb4bf85e.js",
+    "precache-manifest.985c86b8ae2d34b11d3c217390342e34.js": "/Portfolio/precache-manifest.985c86b8ae2d34b11d3c217390342e34.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/main.bf0f7d8c.chunk.css.map": "/Portfolio/static/css/main.bf0f7d8c.chunk.css.map",
-    "static/js/2.82a0fc8e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.82a0fc8e.chunk.js.LICENSE.txt"
+    "static/js/2.82a0fc8e.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.82a0fc8e.chunk.js.LICENSE.txt",
+    "static/media/ItForYou.png": "/Portfolio/static/media/ItForYou.c2e8917e.png",
+    "static/media/Newspace.png": "/Portfolio/static/media/Newspace.a131724d.png",
+    "static/media/Ssafy-Shopper.png": "/Portfolio/static/media/Ssafy-Shopper.1ca24e50.png",
+    "static/media/냉장고를부탁해.png": "/Portfolio/static/media/냉장고를부탁해.346cfaec.png"
   },
   "entrypoints": [
     "static/js/runtime-main.efb1fe8d.js",
     "static/js/2.82a0fc8e.chunk.js",
     "static/css/main.bf0f7d8c.chunk.css",
-    "static/js/main.cec89c9b.chunk.js"
+    "static/js/main.87692c57.chunk.js"
   ]
 }
