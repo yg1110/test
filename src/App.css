@@ -23,8 +23,10 @@ a:focus {
 }
 
 img {
+  display: block;
   width: 100%;
   cursor: pointer;
+  order: 1;
   -webkit-transition: opacity 0.3s ease-out;
   -moz-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out;
@@ -113,6 +115,38 @@ footer {
   padding: 12px;
 }
 
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  order: -1;
+  transition: 0.5s ease;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
 @media all and (max-width: 768px) {
   .flex-nav li,
   .gallery li {
@@ -166,10 +200,5 @@ footer {
   .top {
     -webkit-box-ordinal-group: 3;
     order: 2;
-  }
-
-  .details {
-    -webkit-box-ordinal-group: 4;
-    order: 3;
   }
 }
