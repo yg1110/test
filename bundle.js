@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/app.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/app.css":
-/*!***********************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/app.css ***!
-  \***********************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
+/*!*************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\n// Module\nexports.push([module.i, \"body {\\n  background-color: green;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/app.css?./node_modules/css-loader/dist/cjs.js");
+eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\nexports = ___CSS_LOADER_API_IMPORT___(false);\nexports.push([module.i, \"@import url(https://fonts.googleapis.com/css?family=Lato:400,900);\"]);\n// Module\nexports.push([module.i, \"@font-face {\\n  font-family: \\\"ImcreSoojin\\\";\\n  src: url(\\\"https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff\\\")\\n    format(\\\"woff\\\");\\n  font-weight: normal;\\n  font-style: normal;\\n}\\n\\n*,\\n*:before,\\n*:after {\\n  -webkit-box-sizing: inherit;\\n  -moz-box-sizing: inherit;\\n  box-sizing: inherit;\\n}\\n\\nhtml {\\n  -webkit-box-sizing: border-box;\\n  -moz-box-sizing: border-box;\\n  box-sizing: border-box;\\n}\\n\\nbody {\\n  font-family: \\\"Lato\\\", sans-serif;\\n  background: #fff;\\n  color: #222;\\n}\\n\\nul,\\nli {\\n  list-style: none;\\n}\\n\\n.wrapper {\\n  max-width: 1000px;\\n  margin: 0 auto;\\n}\\n\\nheader {\\n  text-align: center;\\n}\\n\\nheader a,\\nnav a {\\n  width: 100%;\\n  color: #ff9697;\\n  padding: 20px 5px;\\n  font-weight: 400px;\\n  text-decoration: none;\\n  display: inline-block;\\n}\\n\\na:hover {\\n  text-decoration: underline;\\n}\\n\\nnav {\\n  width: 100%;\\n}\\n\\nnav ul {\\n  display: flex;\\n  justify-content: space-around;\\n}\\n\\nnav li a {\\n  color: #8b8b8b;\\n  padding: 20px;\\n}\\n\\n.gallery ul {\\n  margin: 0;\\n  padding: 0;\\n  display: flex;\\n  flex-wrap: wrap;\\n}\\n\\n.gallery li {\\n  flex: 1 1 50%;\\n  padding: 12px;\\n}\\n\\nsection,\\nfooter {\\n  text-align: center;\\n  background: #fff;\\n  padding: 20px;\\n  margin: 20px 0;\\n  font-weight: 100;\\n}\\n\\nfooter {\\n  border-top: 1px solid #e2e2e2;\\n  width: 100%;\\n  display: inline-block;\\n}\\n\\nfooter p {\\n  color: #8b8b8b;\\n  float: left;\\n}\\n\\nfooter i {\\n  color: #8b8b8b;\\n  padding: 20px;\\n  float: right;\\n}\\n\\nimg {\\n  width: 456px;\\n  height: 304px;\\n  cursor: pointer;\\n  transition: opacity 0.5s ease-out;\\n\\n  /* box-shadow: 2px 2px 4px 0 #ccc; */\\n  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); */\\n  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);\\n  border-radius: 6px;\\n}\\n\\n.imageContainer:hover .imageDescription {\\n  opacity: 1;\\n}\\n\\n.imageContainer:hover .image {\\n  opacity: 0.3;\\n}\\n\\n.imageContainer {\\n  position: relative;\\n}\\n\\n.imageDescription {\\n  position: absolute;\\n  width: 100%;\\n  height: 100%;\\n  opacity: 0;\\n}\\n\\n.imageContainer img {\\n  display: block;\\n}\\n\\n.content {\\n  display: flex;\\n  font-weight: bold;\\n  width: 100%;\\n  height: 100%;\\n  justify-content: center;\\n  align-items: center;\\n  color: #fff;\\n  font-family: \\\"Roboto\\\", sans-serif;\\n}\\n\\n.info {\\n  opacity: 0;\\n  transition: opacity 0.5s ease-out;\\n  position: absolute;\\n}\\n\\n.title {\\n  font-size: xx-large;\\n}\\n\\n.desciption {\\n  margin-top: 20px;\\n  font-size: large;\\n}\\n\\n.imageContainer:hover .info {\\n  opacity: 1;\\n}\\n\\n.v-border,\\n.h-border {\\n  position: absolute;\\n  top: 0%;\\n  left: 0%;\\n  width: 100%;\\n  height: 100%;\\n}\\n\\n.v-border:before,\\n.v-border:after {\\n  width: 0%;\\n  height: 3px;\\n  left: 50%;\\n  transition: all 500ms ease-out;\\n  background: #fff;\\n}\\n\\n.h-border:before,\\n.h-border:after {\\n  height: 0%;\\n  top: 50%;\\n  width: 3px;\\n  transition: all 500ms ease-out;\\n  background: #fff;\\n}\\n\\n.v-border:before {\\n  content: \\\"\\\";\\n  top: 10%;\\n  position: absolute;\\n}\\n\\n.v-border:after {\\n  content: \\\"\\\";\\n  bottom: 10%;\\n  position: absolute;\\n}\\n\\n.h-border:before {\\n  content: \\\"\\\";\\n  left: 10%;\\n  height: 0%;\\n  position: absolute;\\n}\\n\\n.h-border:after {\\n  content: \\\"\\\";\\n  right: 10%;\\n  position: absolute;\\n}\\n\\n.imageContainer:hover .v-border:before,\\n.imageContainer:hover .v-border:after {\\n  width: 90%;\\n  left: 5%;\\n}\\n\\n.imageContainer:hover .h-border:before,\\n.imageContainer:hover .h-border:after {\\n  height: 90%;\\n  top: 5%;\\n}\\n\\n.imageContainer:hover .bg-overlay {\\n  background: rgba(0, 0, 0, 0.45);\\n}\\n\\n.bg-overlay {\\n  background: rgba(0, 0, 0, 0.25);\\n  position: absolute;\\n  top: 0px;\\n  left: 0px;\\n  width: 100%;\\n  height: 100%;\\n  transition: all 500ms linear;\\n}\\n\\n.modal {\\n  display: none;\\n  position: fixed;\\n  z-index: 1;\\n  padding-top: 100px;\\n  left: 0;\\n  top: 0;\\n  width: 100%;\\n  height: 100%;\\n  overflow: auto;\\n  background-color: rgb(0, 0, 0);\\n  background-color: rgba(0, 0, 0, 0.4);\\n}\\n\\n.modal-content {\\n  background-color: #fff;\\n  border-radius: 0.5em;\\n  margin: auto;\\n  overflow: scroll;\\n  width: 80%;\\n  height: 90%;\\n}\\n\\n.modal-header {\\n  width: 100%;\\n  padding: 10px 20px 0 20px;\\n  display: inline-block;\\n  border-bottom: 1px solid #e2e2e2;\\n  text-align: center;\\n}\\n\\n.modal-body {\\n  width: 100%;\\n  padding: 10px 40px;\\n}\\n\\n.modal-body > * {\\n  margin: 20px 0;\\n}\\n\\n.imageContent {\\n  padding: 10px 10px 30px 10px;\\n  width: 100%;\\n  display: flex;\\n  align-items: center;\\n}\\n\\n.imageContent img {\\n  width: 80%;\\n}\\n\\n.close {\\n  color: #aaaaaa;\\n  float: right;\\n  font-size: 28px;\\n  font-weight: bold;\\n  padding-top: 12px;\\n}\\n\\n.close:hover,\\n.close:focus {\\n  color: #000;\\n  text-decoration: none;\\n  cursor: pointer;\\n}\\n\\n.prevbtn {\\n  width: 10%;\\n  color: #aaaaaa;\\n  font-size: 30px;\\n}\\n\\n.nextbtn {\\n  text-align: end;\\n  width: 10%;\\n  color: #aaaaaa;\\n  font-size: 30px;\\n}\\n\\n.projecttitle h2,\\n.projecttitle h4 {\\n  text-align: center;\\n}\\n\\n.projecttitle h4 {\\n  color: #9da7a6;\\n}\\n\\n.projectDesciption {\\n  width: 100%;\\n}\\n\\n.projectDesciption li {\\n  font-family: \\\"ImcreSoojin\\\";\\n\\n  width: 45%;\\n  margin: 10px;\\n  text-align: center;\\n  display: inline-block;\\n  list-style: initial;\\n}\\n\\n.projectContent {\\n  display: flex;\\n}\\n\\n.useLibrary {\\n  width: 33%;\\n  display: flex;\\n  flex-direction: column;\\n}\\n\\n.useLibrary-body {\\n  display: inline-block;\\n}\\n\\n.people {\\n  display: flex;\\n  flex-direction: column;\\n  width: 33%;\\n}\\n\\n.people p {\\n  text-align: center;\\n  padding: 20px;\\n  margin: 20px;\\n}\\n\\n.video {\\n  width: 33%;\\n  display: flex;\\n  flex-direction: column;\\n}\\n\\n.videoContent {\\n  margin: 20px;\\n  align-items: center;\\n}\\n\\n.videoContent i {\\n  margin-right: 10px;\\n}\\n\\n.modal-footer {\\n  width: 100%;\\n  height: 100px;\\n  margin-bottom: 70px;\\n  display: flex;\\n  flex-direction: column;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\\n.modal-footer span {\\n  padding: 20px;\\n  border: solid 1px black;\\n}\\n\\n.modal-footer::before {\\n  content: \\\"\\\";\\n  margin: 40px;\\n  width: 90%;\\n  display: inline-block;\\n  border-bottom: 1px solid #e2e2e2;\\n}\\n\\n.button {\\n  border: solid 2px #444;\\n  background: #16a085;\\n  font-weight: bold;\\n  letter-spacing: 0.2rem;\\n  color: #fff;\\n  box-shadow: inset 2px 2px 0 #fff, 0 8px 10px -4px rgba(0, 0, 0, 0.4);\\n  cursor: pointer;\\n}\\n\\n.action-button {\\n  position: relative;\\n  padding: 10px 40px;\\n  margin: 0px 10px 10px 0px;\\n  float: left;\\n  border-radius: 3px;\\n  font-family: \\\"Lato\\\", sans-serif;\\n  font-size: 18px;\\n  color: #fff;\\n  text-decoration: none;\\n}\\n.action-button:active {\\n  transform: translate(0px, 5px);\\n  -webkit-transform: translate(0px, 5px);\\n  border-bottom: 1px solid;\\n}\\n\\n.animate {\\n  transition: all 0.1s;\\n  -webkit-transition: all 0.1s;\\n}\\n\\n.blue {\\n  background-color: #3498db;\\n  border-bottom: 5px solid #2980b9;\\n  text-shadow: 0px -2px #2980b9;\\n}\\n\\n.red {\\n  background-color: #e74c3c;\\n  border-bottom: 5px solid #c0392b;\\n  text-shadow: 0px -2px #c0392b;\\n}\\n\\n.green {\\n  background-color: #2ecc71;\\n  border-bottom: 5px solid #27ae60;\\n  text-shadow: 0px -2px #27ae60;\\n}\\n\\n.yellow {\\n  background-color: #f1c40f;\\n  border-bottom: 5px solid #f39c12;\\n  text-shadow: 0px -2px #f39c12;\\n}\\n\\n.videobutton {\\n  display: flex;\\n  justify-content: center;\\n  align-items: center;\\n}\\n\", \"\"]);\n// Exports\nmodule.exports = exports;\n\n\n//# sourceURL=webpack:///./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -121,26 +121,26 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
-/***/ "./src/app.css":
-/*!*********************!*\
-  !*** ./src/app.css ***!
-  \*********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./app.css */ \"./node_modules/css-loader/dist/cjs.js!./src/app.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/app.css?");
-
-/***/ }),
-
-/***/ "./src/app.js":
-/*!********************!*\
-  !*** ./src/app.js ***!
-  \********************/
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app.css */ \"./src/app.css\");\n/* harmony import */ var _app_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_app_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/style.css":
+/*!***********************!*\
+  !*** ./src/style.css ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/style.css?");
 
 /***/ })
 
