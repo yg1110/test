@@ -133,6 +133,42 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/images/Newspace.png":
+/*!*********************************!*\
+  !*** ./src/images/Newspace.png ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"images/images/Newspace.png\");\n\n//# sourceURL=webpack:///./src/images/Newspace.png?");
+
+/***/ }),
+
+/***/ "./src/images/Ssafy-Shopper.png":
+/*!**************************************!*\
+  !*** ./src/images/Ssafy-Shopper.png ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"images/images/Ssafy-Shopper.png\");\n\n//# sourceURL=webpack:///./src/images/Ssafy-Shopper.png?");
+
+/***/ }),
+
+/***/ "./src/images/냉장고를부탁해.png":
+/*!********************************!*\
+  !*** ./src/images/냉장고를부탁해.png ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"images/images/냉장고를부탁해.png\");\n\n//# sourceURL=webpack:///./src/images/%EB%83%89%EC%9E%A5%EA%B3%A0%EB%A5%BC%EB%B6%80%ED%83%81%ED%95%B4.png?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -141,7 +177,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_ItForYou_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/ItForYou.png */ \"./src/images/ItForYou.png\");\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _images_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/냉장고를부탁해.png */ \"./src/images/냉장고를부탁해.png\");\n/* harmony import */ var _images_ItForYou_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/ItForYou.png */ \"./src/images/ItForYou.png\");\n/* harmony import */ var _images_Newspace_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/Newspace.png */ \"./src/images/Newspace.png\");\n/* harmony import */ var _images_Ssafy_Shopper_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/Ssafy-Shopper.png */ \"./src/images/Ssafy-Shopper.png\");\n\n\n\n\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
