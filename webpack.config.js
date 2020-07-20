@@ -3,29 +3,35 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: {
-    app: "./src/app.js"
-  },
+  entry: "./src/index.js",
   output: {
-    path: path.resolve("./dist"),
-    filename: "[name].js"
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js"
   },
   module: {
     rules: [
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader"
+          }
+        ]
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-      template: "./public/index.html", // public/index.html 파일을 읽는다.
-      filename: "index.html" // output으로 출력할 파일은 index.html 이다.
+      template: "./public/index.html",
+      filename: "index.html"
     })
   ],
   devServer: {
-    contentBase: path.join(__dirname, "./dist/"),
+    contentBase: path.resolve(__dirname, "public"),
     port: 5500
   }
 };
