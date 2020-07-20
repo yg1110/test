@@ -1,0 +1,152 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-position {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  color: white;
+  position: fixed;
+  display: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus,
+.prevbtn:hover,
+.prevbtn:focus,
+.nextbtn:hover,
+.nextbtn:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.prevbtn {
+  position: fixed;
+  display: absolute;
+  top: 50%;
+  left: 30px;
+  color: white;
+  font-size: 50px;
+}
+
+.nextbtn {
+  position: fixed;
+  display: absolute;
+  top: 50%;
+  right: 30px;
+  color: white;
+  font-size: 50px;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 0.5em;
+  margin: auto;
+  overflow: scroll;
+  width: 80%;
+  max-height: 90%;
+}
+
+.modal-header {
+  width: 100%;
+  margin: 40px 0 10px 0;
+  display: inline-block;
+  text-align: center;
+}
+.modal-header h2 {
+  margin-top: 10px;
+  color: #9da7a6;
+}
+
+.modal-body {
+  display: flex;
+  width: 100%;
+  padding: 10px 40px;
+}
+
+.modal-body > * {
+  margin: 20px 0;
+}
+
+.video {
+  width: 50%;
+}
+
+.video-container {
+  width: 100%;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video p {
+  color: #9da7a6;
+  font-family: "ImcreSoojin";
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.projectDesciption {
+  width: 50%;
+}
+
+.projectDesciption li {
+  font-family: "ImcreSoojin";
+  margin: 20px;
+  text-align: center;
+}
+
+.modal-footer {
+  margin: 40px;
+  margin-top: 0;
+  display: flex;
+}
+
+.people {
+  width: 50%;
+}
+
+.people p {
+  text-align: center;
+}
+
+.useLibrary {
+  width: 50%;
+}
+
+.useLibrary p {
+  display: inline-block;
+}
