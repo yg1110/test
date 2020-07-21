@@ -119,9 +119,7 @@
             <span class="nextbtn">
                 &gt;
             </span>
-
             <div class="modal-position">
-
                 <div class="modal-content">
                     <div class="modal-header">
                         <h2>Ssafy-Shopper</h2>
@@ -174,20 +172,25 @@
 
     <script>
         const modal = document.getElementById("modal");
+        const modalContent = document.querySelector(".modal-content");
         const close = document.querySelector(".modal-position")
         const span = document.querySelector(".close")
 
         function openModal() {
-            modal.style.display = "block";
+            modal.style.opacity = 1;
+            modal.style.pointerEvents = "auto";
         }
 
         span.onclick = function () {
-            modal.style.display = "none";
+            modal.style.opacity = 0;
+            modal.style.pointerEvents = "none";
         }
 
         window.onclick = function (event) {
+            console.log(event.target);
             if (event.target === close) {
-                modal.style.display = "none";
+                modal.style.opacity = 0;
+                modal.style.pointerEvents = "none";
             }
         }
     </script>
