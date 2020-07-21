@@ -152,17 +152,14 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="border"></div>
                     <div class="modal-footer">
-                        <div class="people">
-                            <a class="btn green rounded" href="#">2인</a>
-                            <a class="btn light-green rounded" href="#">Front-End</a>
-                        </div>
-                        <div class="useLibrary">
-                            <a class="btn orange rounded" href="#">SpringBoot</a>
-                            <a class="btn blue rounded" href="#">Vue.js</a>
-                            <a class="btn purple rounded" href="#">JavaScript</a>
-                            <a class="btn yellow rounded" href="#">SQL</a>
-                        </div>
+                        <a class="btn green rounded" href="#">2인</a>
+                        <a class="btn light-green rounded" href="#">Front-End</a>
+                        <a class="btn orange rounded" href="#">SpringBoot</a>
+                        <a class="btn blue rounded" href="#">Vue.js</a>
+                        <a class="btn purple rounded" href="#">JavaScript</a>
+                        <a class="btn yellow rounded" href="#">SQL</a>
                     </div>
                 </div>
 
@@ -173,24 +170,29 @@
     <script>
         const modal = document.getElementById("modal");
         const modalContent = document.querySelector(".modal-content");
-        const close = document.querySelector(".modal-position")
-        const span = document.querySelector(".close")
+        const close = document.querySelector(".modal-position");
+        const span = document.querySelector(".close");
+
+        const body = document.querySelector("body");
 
         function openModal() {
             modal.style.opacity = 1;
             modal.style.pointerEvents = "auto";
+            body.style.overflow = "hidden";
         }
 
         span.onclick = function () {
             modal.style.opacity = 0;
             modal.style.pointerEvents = "none";
+            body.style.overflow = "auto";
         }
 
         window.onclick = function (event) {
-            console.log(event.target);
+            // console.log(event.target);
             if (event.target === close) {
                 modal.style.opacity = 0;
                 modal.style.pointerEvents = "none";
+                body.style.overflow = "auto";
             }
         }
     </script>
