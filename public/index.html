@@ -119,13 +119,11 @@
             <span class="nextbtn">
                 &gt;
             </span>
-
             <div class="modal-position">
-
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h1>Ssafy-Shopper</h1>
-                        <h2>- 알레르기가 있는 사람들을 위한 건강먹거리 쇼핑몰 -</h2>
+                        <h2>Ssafy-Shopper</h2>
+                        <h3>- 알레르기가 있는 사람들을 위한 건강먹거리 쇼핑몰 -</h3>
                     </div>
                     <div class="modal-body">
                         <div class="video">
@@ -174,37 +172,47 @@
 
     <script>
         const modal = document.getElementById("modal");
+        const modalContent = document.querySelector(".modal-content");
         const close = document.querySelector(".modal-position")
         const span = document.querySelector(".close")
 
         function openModal() {
-            modal.style.display = "block";
+            modal.style.opacity = 1;
+            modal.style.pointerEvents = "auto";
         }
 
         span.onclick = function () {
-            modal.style.display = "none";
+            modal.style.opacity = 0;
+            modal.style.pointerEvents = "none";
         }
 
         window.onclick = function (event) {
+            console.log(event.target);
             if (event.target === close) {
-                modal.style.display = "none";
+                modal.style.opacity = 0;
+                modal.style.pointerEvents = "none";
             }
         }
     </script>
     <footer>
-        <p>Copyright &copy; 2020 YG.</p>
-        <a href="https://yg1110.tistory.com/" title="tistory">
-            <i class="fa fa-tumblr"></i>
-        </a>
-        <a href="https://github.com/yg1110" title="GitHub">
-            <i class="fa fa-github"></i>
-        </a>
-        <a href="tel:010-0000-0000" title="phone">
-            <i class="fa fa-phone"></i>
-        </a>
-        <a href="mailto:younggil9488@gmail.com" title="email">
-            <i class="fa fa-envelope"></i>
-        </a>
+        <div>
+            <p>Copyright &copy; 2020 YG.</p>
+
+            <div class="footer-icon">
+                <a href="https://yg1110.tistory.com/" title="tistory">
+                    <i class="fa fa-tumblr"></i>
+                </a>
+                <a href="https://github.com/yg1110" title="GitHub">
+                    <i class="fa fa-github"></i>
+                </a>
+                <a href="tel:010-0000-0000" title="phone">
+                    <i class="fa fa-phone"></i>
+                </a>
+                <a href="mailto:younggil9488@gmail.com" title="email">
+                    <i class="fa fa-envelope"></i>
+                </a>
+            </div>
+        </div>
     </footer>
     </div>
 </body>
