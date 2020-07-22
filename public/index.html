@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Portfolio</title>
     <script src="bundle.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -11,211 +11,52 @@
 <body>
     <div class="wrapper">
         <header class="top">
-            <h1>
-                <a href="#">YG1110</a>
-            </h1>
+            <header-content></header-content>
         </header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-            </ul>
+            <nav-content></nav-content>
         </nav>
+
         <section class="gallery">
-            <ul>
-                <li>
-                    <div class="imageContainer">
-                        <div class="imageDescription">
-
-                            <div class="content">
-                                <div class="bg-overlay"></div>
-                                <div class="v-border"></div>
-                                <div class="h-border"></div>
-                                <div class="info">
-                                    <div class="title">
-                                        Ssafy-Shopper
-                                    </div>
-                                    <div class="desciption">
-                                        - 식품의 영양정보를 한눈에! -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="image" src="./images/Ssafy-Shopper.png" alt="Ssafy-Shopper" onclick="openModal()">
-                    </div>
-                </li>
-                <li>
-                    <div class="imageContainer">
-                        <div class="imageDescription">
-                            <div class="content">
-                                <div class="bg-overlay"></div>
-                                <div class="v-border"></div>
-                                <div class="h-border"></div>
-                                <div class="info">
-                                    <div class="title">
-                                        Newspace
-                                    </div>
-                                    <div class="desciption">
-                                        - 내가 원하는 키워드에 포함되는 뉴스는? -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <img class="image" src="./images/Newspace.png" alt="Newspace" onclick="openModal()">
-                    </div>
-                </li>
-                <li>
-                    <div class="imageContainer">
-                        <div class="imageDescription">
-                            <div class="content">
-                                <div class="bg-overlay"></div>
-                                <div class="v-border"></div>
-                                <div class="h-border"></div>
-                                <div class="info">
-                                    <div class="title">
-                                        냉장고를 부탁해
-                                    </div>
-                                    <div class="desciption">
-                                        - 내가 가진 재료로 만들수 있는 요리는? -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <img class="image" src="./images/냉장고를부탁해.png" alt="냉장고를부탁해" onclick="openModal()">
-                    </div>
-                </li>
-                <li>
-                    <div class="imageContainer">
-                        <div class="imageDescription">
-                            <div class="content">
-                                <div class="bg-overlay"></div>
-                                <div class="v-border"></div>
-                                <div class="h-border"></div>
-                                <div class="info">
-                                    <div class="title">
-                                        IT for You
-                                    </div>
-                                    <div class="desciption">
-                                        - 기술면접 우리와 함께! -
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img class="image" src="./images/ItForYou.png" alt="ItForYou" onclick="openModal()">
-                    </div>
-                </li>
-            </ul>
+            <image-content></image-content>
         </section>
 
-        <div id="modal" class="modal">
-            <span class="close">&times;</span>
-            <span class="prevbtn">
-                &lt;
-            </span>
-            <span class="nextbtn">
-                &gt;
-            </span>
-            <div class="modal-position">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h2>Ssafy-Shopper</h2>
-                        <h3>- 알레르기가 있는 사람들을 위한 건강먹거리 쇼핑몰 -</h3>
-                    </div>
-                    <div class="modal-body">
-                        <div class="video">
-                            <div class="video-container">
-                                <div class="jetpack-video-wrapper">
-                                    <span class="embed-youtube">
-                                        <iframe class="youtube-player" src="https://www.youtube.com/embed/s0GnGdL_B8U"
-                                            allowfullscreen="true">
-                                        </iframe>
-                                    </span>
-                                </div>
-                            </div>
-                            <p>
-                                2020.12.10 ~ 2020.12.17 (1주)
-                            </p>
-                        </div>
-                        <div class="projectDesciption">
-                            <ul>
-                                <li>로그인, 회원가입 UI / UX 구현</li>
-                                <li>장바구니 UI / UX 구현</li>
-                                <li>Q&A 게시판 UI / UX 구현</li>
-                                <li>식품 안전나라 식품 영양 공공데이터 파싱</li>
-                                <li>식품 리스트 출력</li>
-                                <li>알레르기, 품절에 따른 이미지 처리</li>
-                                <li>식품별 영양정보 차트 출력</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="border"></div>
-                    <div class="modal-footer">
-                        <a class="btn green rounded" href="#">2인</a>
-                        <a class="btn light-green rounded" href="#">Front-End</a>
-                        <a class="btn orange rounded" href="#">SpringBoot</a>
-                        <a class="btn blue rounded" href="#">Vue.js</a>
-                        <a class="btn purple rounded" href="#">JavaScript</a>
-                        <a class="btn yellow rounded" href="#">SQL</a>
-                    </div>
-                </div>
+        <section>
+            <modal-content></modal-content>
+            <script>
+                const modal = document.getElementById("modal");
+                const modalContent = document.querySelector(".modal-content");
+                const close = document.querySelector(".modal-position");
+                const span = document.querySelector(".close");
 
-            </div>
-        </div>
-    </div>
+                const body = document.querySelector("body");
 
-    <script>
-        const modal = document.getElementById("modal");
-        const modalContent = document.querySelector(".modal-content");
-        const close = document.querySelector(".modal-position");
-        const span = document.querySelector(".close");
+                function openModal() {
+                    modal.style.opacity = 1;
+                    modal.style.pointerEvents = "auto";
+                    body.style.overflow = "hidden";
+                }
 
-        const body = document.querySelector("body");
+                span.onclick = function () {
+                    modal.style.opacity = 0;
+                    modal.style.pointerEvents = "none";
+                    body.style.overflow = "auto";
+                }
 
-        function openModal() {
-            modal.style.opacity = 1;
-            modal.style.pointerEvents = "auto";
-            body.style.overflow = "hidden";
-        }
+                window.onclick = function (event) {
+                    // console.log(event.target);
+                    if (event.target === close) {
+                        modal.style.opacity = 0;
+                        modal.style.pointerEvents = "none";
+                        body.style.overflow = "auto";
+                    }
+                }
+            </script>
+        </section>
 
-        span.onclick = function () {
-            modal.style.opacity = 0;
-            modal.style.pointerEvents = "none";
-            body.style.overflow = "auto";
-        }
-
-        window.onclick = function (event) {
-            // console.log(event.target);
-            if (event.target === close) {
-                modal.style.opacity = 0;
-                modal.style.pointerEvents = "none";
-                body.style.overflow = "auto";
-            }
-        }
-    </script>
-    <footer>
-        <div>
-            <p>Copyright &copy; 2020 YG.</p>
-
-            <div class="footer-icon">
-                <a href="https://yg1110.tistory.com/" title="tistory">
-                    <i class="fa fa-tumblr"></i>
-                </a>
-                <a href="https://github.com/yg1110" title="GitHub">
-                    <i class="fa fa-github"></i>
-                </a>
-                <a href="tel:010-0000-0000" title="phone">
-                    <i class="fa fa-phone"></i>
-                </a>
-                <a href="mailto:younggil9488@gmail.com" title="email">
-                    <i class="fa fa-envelope"></i>
-                </a>
-            </div>
-        </div>
-    </footer>
+        <footer>
+            <footer-content></footer-content>
+        </footer>
     </div>
 </body>
 

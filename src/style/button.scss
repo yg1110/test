@@ -30,7 +30,6 @@ $ash-grey-hover: #d0d5d9;
   background: transparent;
   border: 2px solid transparent;
   box-sizing: border-box;
-  cursor: pointer;
   font-size: 1rem;
   font-weight: 700;
   line-height: 1;
@@ -51,7 +50,7 @@ $ash-grey-hover: #d0d5d9;
 .green {
   background: $green;
   color: #fff;
-  box-shadow: 0 3px 0 darken($green, 10%);
+  box-shadow: 0 2px 0 darken($green, 10%);
   &:hover {
     background: $green-hover;
   }
@@ -59,37 +58,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($green, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($green, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $green;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $green-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $green inset, 0 0 10px 2px $green;
-    }
-  }
 }
 .light-green {
   background: $light-green;
   color: #fff;
-  box-shadow: 0 3px 0 darken($light-green, 10%);
+  box-shadow: 0 2px 0 darken($light-green, 10%);
   &:hover {
     background: $light-green-hover;
   }
@@ -97,37 +70,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($light-green, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($light-green, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $light-green;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $light-green-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $light-green inset, 0 0 10px 2px $light-green;
-    }
-  }
 }
 .orange {
   background: $orange;
   color: #fff;
-  box-shadow: 0 3px 0 darken($orange, 10%);
+  box-shadow: 0 2px 0 darken($orange, 10%);
   &:hover {
     background: $orange-hover;
   }
@@ -135,37 +82,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($orange, 4%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($orange, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $orange;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $orange-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $orange inset, 0 0 10px 2px $orange;
-    }
-  }
 }
 .blue {
   background: $blue;
   color: #fff;
-  box-shadow: 0 3px 0 darken($blue, 10%);
+  box-shadow: 0 2px 0 darken($blue, 10%);
   &:hover {
     background: $blue-hover;
   }
@@ -173,37 +94,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($blue, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($blue, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $blue;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $blue-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $blue inset, 0 0 10px 2px $blue;
-    }
-  }
 }
 .purple {
   background: $purple;
   color: #fff;
-  box-shadow: 0 3px 0 darken($purple, 10%);
+  box-shadow: 0 2px 0 darken($purple, 10%);
   &:hover {
     background: $purple-hover;
   }
@@ -211,37 +106,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($purple, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($purple, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $purple;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $purple-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $purple inset, 0 0 10px 2px $purple;
-    }
-  }
 }
 .yellow {
   background: $yellow;
   color: #fff;
-  box-shadow: 0 3px 0 darken($yellow, 10%);
+  box-shadow: 0 2px 0 darken($yellow, 10%);
   &:hover {
     background: $yellow-hover;
   }
@@ -249,37 +118,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($yellow, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($yellow, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $yellow;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $yellow-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $yellow inset, 0 0 10px 2px $yellow;
-    }
-  }
 }
 .grey {
   background: $grey;
   color: #fff;
-  box-shadow: 0 3px 0 darken($grey, 10%);
+  box-shadow: 0 2px 0 darken($grey, 10%);
   &:hover {
     background: $grey-hover;
   }
@@ -287,37 +130,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($grey, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($grey, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $grey;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $grey-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $grey inset, 0 0 10px 2px $grey;
-    }
-  }
 }
 .red {
   background: $red;
   color: #fff;
-  box-shadow: 0 3px 0 darken($red, 10%);
+  box-shadow: 0 2px 0 darken($red, 10%);
   &:hover {
     background: $red-hover;
   }
@@ -325,37 +142,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($red, 4%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($red, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $red;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $red-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $red inset, 0 0 10px 2px $red;
-    }
-  }
 }
 .dark-blue {
   background: $dark-blue;
   color: #fff;
-  box-shadow: 0 3px 0 darken($dark-blue, 10%);
+  box-shadow: 0 2px 0 darken($dark-blue, 10%);
   &:hover {
     background: $dark-blue-hover;
   }
@@ -363,37 +154,11 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($dark-blue, 3%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($dark-blue, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $dark-blue;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $dark-blue-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $dark-blue inset, 0 0 10px 2px $dark-blue;
-    }
-  }
 }
 .ash-grey {
   background: $ash-grey;
   color: #fff;
-  box-shadow: 0 3px 0 darken($ash-grey, 10%);
+  box-shadow: 0 2px 0 darken($ash-grey, 10%);
   &:hover {
     background: $ash-grey-hover;
   }
@@ -401,33 +166,8 @@ $ash-grey-hover: #d0d5d9;
   &:focus {
     background: darken($ash-grey, 5%);
   }
-  &.press-me {
-    &:active {
-      box-shadow: 0 2px 0 darken($ash-grey, 10%);
-    }
-  }
-  &.transparent {
-    border-color: $ash-grey;
-  }
-  &.effect-left,
-  &.effect-right,
-  &.effect-up,
-  &.effect-down,
-  &.effect-horiz,
-  &.effect-vart,
-  &.effect-box,
-  &.effect-down-left,
-  &.effect-up-right {
-    &:after {
-      background: $ash-grey-hover;
-    }
-  }
-  &.effect-glow {
-    &:hover {
-      box-shadow: 0 0 10px 0 $ash-grey inset, 0 0 10px 2px $ash-grey;
-    }
-  }
 }
+
 .rounded {
   border-radius: 5px;
   &[class*="effect-"] {
@@ -435,127 +175,4 @@ $ash-grey-hover: #d0d5d9;
       border-radius: 5px;
     }
   }
-}
-.full-rounded {
-  border-radius: 20em;
-  &[class*="effect-"] {
-    &:after {
-      border-radius: 20em;
-    }
-  }
-}
-.press-me {
-  &:active {
-    top: 3px;
-  }
-}
-.transparent {
-  background: none;
-  box-shadow: none;
-  text-shadow: none;
-  color: #000;
-}
-[class*="effect-"] {
-  &:hover,
-  &:active,
-  &:focus {
-    background: none;
-  }
-  &:after {
-    content: "";
-    position: absolute;
-    -webkit-transition: all 0.3s ease 0s;
-    -moz-transition: all 0.3s ease 0s;
-    -ms-transition: all 0.3s ease 0s;
-    transition: all 0.3s ease 0s;
-    z-index: -1;
-  }
-}
-.effect-left:after {
-  height: 100%;
-  left: 0;
-  top: 0;
-  width: 0;
-}
-.effect-left:hover:after {
-  width: 100%;
-}
-.effect-right:after {
-  height: 100%;
-  right: 0;
-  top: 0;
-  width: 0;
-}
-.effect-right:hover:after {
-  width: 100%;
-}
-.effect-up:after {
-  width: 100%;
-  left: 0;
-  top: 0;
-  height: 0;
-}
-.effect-up:hover:after {
-  height: 100%;
-}
-.effect-down:after {
-  width: 100%;
-  left: 0;
-  bottom: 0;
-  height: 0;
-}
-.effect-down:hover:after {
-  height: 100%;
-}
-.effect-horiz:after {
-  height: 100%;
-  left: 50%;
-  top: 0;
-  width: 0;
-}
-.effect-horiz:hover:after {
-  width: 100%;
-  left: 0;
-}
-.effect-vart:after {
-  width: 100%;
-  top: 50%;
-  left: 0;
-  height: 0;
-}
-.effect-vart:hover:after {
-  height: 100%;
-  top: 0;
-}
-.effect-box:after {
-  width: 0;
-  top: 50%;
-  left: 50%;
-  height: 0;
-}
-.effect-box:hover:after {
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-.effect-down-left:after {
-  width: 0;
-  top: 0;
-  left: 0;
-  height: 0;
-}
-.effect-down-left:hover:after {
-  width: 100%;
-  height: 100%;
-}
-.effect-up-right:after {
-  width: 0;
-  right: 0;
-  bottom: 0;
-  height: 0;
-}
-.effect-up-right:hover:after {
-  width: 100%;
-  height: 100%;
 }
