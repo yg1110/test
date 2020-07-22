@@ -22,8 +22,39 @@
         </section>
 
         <section>
-            <modal-content></modal-content>
+            <modal-content id="modal-content"></modal-content>
             <script>
+
+                const props = document.getElementById("modal-content");
+                const data = {
+                    title: "Ssafy-Shopper",
+                    subTitle: "알레르기가 있는 사람들을 위한 건강먹거리 쇼핑몰",
+                    youtubeLink: "https://www.youtube.com/embed/s0GnGdL_B8U",
+                    date: "2020.12.10 ~ 2020.12.17 (1주)",
+                    work: [
+                        "로그인, 회원가입 UI / UX 구현",
+                        "장바구니 UI / UX 구현",
+                        "Q&A 게시판 UI / UX 구현",
+                        "식품 안전나라 식품 영양 공공데이터 파싱",
+                        "식품 리스트 출력",
+                        "알레르기, 품절에 따른 이미지 처리",
+                        "식품별 영양정보 차트 출력"
+                    ],
+                    tag: [
+                        ["2인", "blue"],
+                        ["Front-End", "red"],
+                        ["Spring", "green"],
+                        ["Vue.js", "light-green"],
+                        ["HTML", "orange"],
+                        ["CSS", "blue"],
+                        ["JavaScript", "purple"],
+                        ["SQL", "yellow"]
+                    ]
+                }
+
+                props.setAttribute("data-props", JSON.stringify(data))
+                //console.log(JSON.parse(props.dataset.props).tag);
+
                 const modal = document.getElementById("modal");
                 const modalContent = document.querySelector(".modal-content");
                 const close = document.querySelector(".modal-position");
