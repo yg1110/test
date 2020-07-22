@@ -5,33 +5,22 @@ class modal extends HTMLElement {
   static get observedAttributes() {
     // 모니터링 할 속성 이름
     return ["data-props"];
-    // const props = document.getElementById("modal-content");
-    // if (
-    //   props.dataset !== null ||
-    //   props.dataset !== undefined ||
-    //   props.dataset !== ""
-    // ) {
-    //   console.log("props", props.dataset);
-    // }
   }
   connectedCallback() {
     // DOM에 추가되면 실행되는 method;
-    //this.innerHTML = "";
-    //this.innerHTML = this.htmlparser();
   }
   disconnectedCallback() {
     // DOM에서 제거면 실행되는 method
   }
   attributeChangedCallback(attrName, oldVal, newVal) {
-    // console.log(JSON.parse(props.dataset.props).tag);
     this[attrName] = newVal;
-    this.innerHTML = this.htmlparser(JSON.parse(props.dataset.props));
+    this.innerHTML = this.htmlparser(JSON.parse(newVal));
   }
   adoptedCallback(oldDoc, newDoc) {
     // 다른 Document에서 옮겨지면 실행되는 method
   }
 
-  work() {
+  work(data) {
     return data.work.reduce((htmlTag, v) => {
       // let li = document.createElement("li");
       // li.innerText = v;
@@ -42,7 +31,7 @@ class modal extends HTMLElement {
     }, "");
   }
 
-  tag() {
+  tag(data) {
     return data.tag.reduce((span, v) => {
       span += "<span class='btn rounded " + v[1] + "'>" + v[0] + "</span>";
       return span;
@@ -81,19 +70,21 @@ class modal extends HTMLElement {
                 </span>
               </div>
             </div>
-            <p>2020.12.10 ~ 2020.12.17 (1주)</p>
+            <p>` +
+      data.date +
+      `</p>
           </div>
           <div class="projectDesciption">
             <ul>
             ` +
-      this.work() +
+      this.work(data) +
       `
             </ul>
           </div>
         </div>
         <div class="border"></div>
         <div class="modal-footer">` +
-      this.tag() +
+      this.tag(data) +
       `
         </div>
       </div>

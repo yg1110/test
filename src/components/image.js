@@ -39,7 +39,7 @@ class image extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <img class="image" src="./images/Ssafy-Shopper.png" alt="Ssafy-Shopper" onclick="openModal()">
+                <img class="image" src="./images/Ssafy-Shopper.png" alt="Ssafy-Shopper" onclick="openModal(0)">
             </div>
         </li>
         <li>
@@ -60,7 +60,7 @@ class image extends HTMLElement {
                     </div>
                 </div>
 
-                <img class="image" src="./images/Newspace.png" alt="Newspace" onclick="openModal()">
+                <img class="image" src="./images/Newspace.png" alt="Newspace" onclick="openModal(1)">
             </div>
         </li>
         <li>
@@ -81,7 +81,7 @@ class image extends HTMLElement {
                     </div>
                 </div>
 
-                <img class="image" src="./images/냉장고를부탁해.png" alt="냉장고를부탁해" onclick="openModal()">
+                <img class="image" src="./images/냉장고를부탁해.png" alt="냉장고를부탁해" onclick="openModal(2)">
             </div>
         </li>
         <li>
@@ -101,7 +101,7 @@ class image extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <img class="image" src="./images/ItForYou.png" alt="ItForYou" onclick="openModal()">
+                <img class="image" src="./images/ItForYou.png" alt="ItForYou" onclick="openModal(3)">
             </div>
         </li>
     </ul>
