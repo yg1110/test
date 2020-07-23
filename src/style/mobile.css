@@ -1,0 +1,35 @@
+.image-content-mobile {
+  display: none;
+}
+
+@media all and (max-width: 999px) {
+  .image-content-pc {
+    display: none;
+  }
+  .image-content-mobile {
+    display: block;
+  }
+  .modal-content {
+    height: 100%;
+    width: 100%;
+  }
+
+  .modal-body {
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .worklist {
+    width: 100%;
+    font-family: "ImcreSoojin";
+  }
+
+  .worklist li {
+    width: 30% !important;
+  }
+}

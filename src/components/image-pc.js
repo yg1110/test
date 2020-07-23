@@ -108,5 +108,5 @@ class image extends HTMLElement {
     `;
   }
 }
-customElements.get("image-content") ||
-  customElements.define("image-content", image);
+customElements.get("image-content-pc") ||
+  customElements.define("image-content-pc", image);

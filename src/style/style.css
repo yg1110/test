@@ -82,25 +82,6 @@ nav li a {
   padding: 12px;
 }
 
-@media all and (max-width: 999px) {
-  .gallery li {
-    flex-basis: 100%;
-  }
-
-  .wrapper {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-  }
-
-  .wrapper > * {
-    -webkit-box-ordinal-group: 100;
-    order: 99;
-  }
-}
-
 section,
 footer {
   text-align: center;

@@ -18,7 +18,11 @@
         </nav>
 
         <section class="gallery">
-            <image-content></image-content>
+            <image-content-pc class="image-content-pc"></image-content-pc>
+            <image-content-mobile class="image-content-mobile"></image-content-mobile>
+            <image-content-mobile class="image-content-mobile"></image-content-mobile>
+            <image-content-mobile class="image-content-mobile"></image-content-mobile>
+            <image-content-mobile class="image-content-mobile"></image-content-mobile>
         </section>
 
         <section>
@@ -29,6 +33,7 @@
 
             <script>
                 const props = document.querySelectorAll("modal-content");
+                const imageContent = document.querySelectorAll("image-content-mobile");
                 const data = [
                     {
                         title: "Ssafy-Shopper",
@@ -129,6 +134,10 @@
                         ]
                     }
                 ]
+                imageContent[0].setAttribute("data-props", JSON.stringify(data[0]));
+                imageContent[1].setAttribute("data-props", JSON.stringify(data[1]));
+                imageContent[2].setAttribute("data-props", JSON.stringify(data[2]));
+                imageContent[3].setAttribute("data-props", JSON.stringify(data[3]));
 
                 props[0].setAttribute("data-props", JSON.stringify(data[0]))
                 props[1].setAttribute("data-props", JSON.stringify(data[1]))
@@ -146,7 +155,6 @@
 
                 const prevbtn = document.querySelectorAll(".prevbtn");
                 const nextbtn = document.querySelectorAll(".nextbtn");
-
 
                 [...prevbtn].forEach((v, i) => {
                     if (i === 0) {
@@ -168,7 +176,7 @@
                     }
 
                     v.addEventListener("click", () => {
-                        modal[i].style.transform = "translateX(-100%)";
+                        //modal[i].style.transform = "translateX(-100%)";
                         modal[i].style.opacity = 0;
                         modal[i].style.pointerEvents = "none";
 
@@ -190,12 +198,14 @@
                     v.addEventListener("click", () => {
                         modal[i].style.opacity = 0;
                         modal[i].style.pointerEvents = "none";
+                        video[i].currentTime = 0;
                         video[i].pause();
                         body.style.overflow = "auto";
                     });
                 })
 
                 window.onclick = function (event) {
+                    console.log(event.target);
                     [...close].some((v, i) => {
                         if (event.target === v) {
                             modal[i].style.opacity = 0;

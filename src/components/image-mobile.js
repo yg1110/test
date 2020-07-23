@@ -1,4 +1,4 @@
-class modal extends HTMLElement {
+class image extends HTMLElement {
   constructor() {
     super();
   }
@@ -13,6 +13,7 @@ class modal extends HTMLElement {
     // DOM에서 제거면 실행되는 method
   }
   attributeChangedCallback(attrName, oldVal, newVal) {
+    // 속성이 추가/제거/변경되면 실행되는 method
     this[attrName] = newVal;
     this.innerHTML = this.htmlparser(JSON.parse(newVal));
   }
@@ -26,7 +27,7 @@ class modal extends HTMLElement {
       // li.innerText = v;
       // console.log("<li>" + v + "</li>");
       // console.log(li.value);
-      htmlTag += "<li>" + v + "</li>";
+      htmlTag += "<li class='test'>" + v + "</li>";
       return htmlTag;
     }, "");
   }
@@ -41,50 +42,40 @@ class modal extends HTMLElement {
   htmlparser(data) {
     return (
       `
-    <div id="modal" class="modal">
-    <span class="close">&times;</span>
-    <span class="prevbtn">&lt;</span>
-    <span class="nextbtn">&gt;</span>
-    <div class="modal-position">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h2>` +
+    <div class="modal-content">
+    <div class="modal-header">
+      <h2>` +
       data.title +
       `</h2>
-          <h3>- ` +
+      <h3>- ` +
       data.subTitle +
       ` -</h3>
-        </div>
-        <div class="modal-body">
-          <div class="video">
-            <video class="video-content" controls allowfullscreen>
-              <source src="` +
+    </div>
+    <div class="modal-body">
+      <div class="video">
+        <video class="video-content" controls allowfullscreen>
+          <source src="` +
       data.video +
       `" >
-            </video>
-            <p>` +
+        </video>
+        <p>` +
       data.date +
       `</p>
-          </div>
-          <div class="projectDesciption">
-            <ul>
-            ` +
+      </div>
+        <ul class="worklist">
+        ` +
       this.work(data) +
       `
-            </ul>
-          </div>
-        </div>
-        <div class="border"></div>
-        <div class="modal-footer">` +
+        </ul>
+      </div>
+    <div class="modal-footer">` +
       this.tag(data) +
       `
-        </div>
-      </div>
     </div>
   </div>
-  `
+    `
     );
   }
 }
-customElements.get("modal-content") ||
-  customElements.define("modal-content", modal);
+customElements.get("image-content-mobile") ||
+  customElements.define("image-content-mobile", image);
