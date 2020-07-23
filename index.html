@@ -10,12 +10,6 @@
 
 <body>
     <div class="wrapper">
-        <video controls autoplay>
-            <source src="video/newspace.mp4" type="video/mp4">
-
-            Sorry, your browser doesn't support embedded videos.
-        </video>
-
         <header class="top">
             <header-content></header-content>
         </header>
@@ -39,7 +33,7 @@
                     {
                         title: "Ssafy-Shopper",
                         subTitle: "알레르기가 있는 사람들을 위한 건강먹거리 쇼핑몰",
-                        youtubeLink: "https://www.youtube.com/embed/s0GnGdL_B8U",
+                        video: "video/Ssafy-Shopper.mp4",
                         date: "2019.12.10. ~ 2019.12.16. (1주)",
                         work: [
                             "로그인, 회원가입 UI / UX 구현",
@@ -65,7 +59,7 @@
                     {
                         title: "Newspace",
                         subTitle: "관심 키워드의 뉴스만 모아볼수 있는 사이트",
-                        youtubeLink: "https://www.youtube.com/embed/1UHzYyb5PAA&t",
+                        video: "video/Newspace.mp4",
                         date: "2020.01. ~ 2020.02. (6주)",
                         work: [
                             "로그인, 회원가입 UI / UX 구현",
@@ -90,7 +84,7 @@
                     {
                         title: "냉장고를 부탁해",
                         subTitle: "AI로 냉장고에 있는 식재료를 식별하고 레시피를 추천해주는 서비스",
-                        youtubeLink: "https://www.youtube.com/embed/aLwNdrDPQzs",
+                        video: "video/냉장고를부탁해.mp4",
                         date: "2020.03. ~ 2020.04. (5주)",
                         work: [
                             "레시피 목록 UI / UX 구현",
@@ -113,7 +107,7 @@
                     {
                         title: "IT FOR YOU",
                         subTitle: "CS지식과 면접대비를 도와주는 사이트",
-                        youtubeLink: "https://www.youtube.com/embed/HqcZifJzUUA",
+                        video: "video/ITFORYOU.mov",
                         date: "2020.05. ~ 2020.06. (5주)",
                         work: [
                             "메인화면 UI / UX 구현",
@@ -148,7 +142,7 @@
                 const close = document.querySelectorAll(".modal-position");
                 const span = document.querySelectorAll(".close");
                 const body = document.querySelector("body");
-                const youtube = document.querySelectorAll(".youtube-player");
+                const video = document.querySelectorAll(".video-content");
 
                 const prevbtn = document.querySelectorAll(".prevbtn");
                 const nextbtn = document.querySelectorAll(".nextbtn");
@@ -186,7 +180,6 @@
 
 
                 function openModal(i) {
-                    //transition: transform 0.5s ease 0s, opacity 0.5s ease 0.5s;
                     modal[i].style.opacity = 1;
                     modal[i].style.pointerEvents = "auto";
                     //modal[i].style.transition = "transform 0.5s ease 0s, opacity 0.5s ease 0.5s"
@@ -197,7 +190,7 @@
                     v.addEventListener("click", () => {
                         modal[i].style.opacity = 0;
                         modal[i].style.pointerEvents = "none";
-                        youtube[i].setAttribute("src", youtube[i].getAttribute("src"));
+                        video[i].pause();
                         body.style.overflow = "auto";
                     });
                 })
@@ -207,7 +200,8 @@
                         if (event.target === v) {
                             modal[i].style.opacity = 0;
                             modal[i].style.pointerEvents = "none";
-                            youtube[i].setAttribute("src", youtube[i].getAttribute("src"));
+                            video[i].currentTime = 0;
+                            video[i].pause();
                             body.style.overflow = "auto";
                             return true;
                         }
