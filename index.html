@@ -10,6 +10,12 @@
 
 <body>
     <div class="wrapper">
+        <video controls autoplay>
+            <source src="video/newspace.mp4" type="video/mp4">
+
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
         <header class="top">
             <header-content></header-content>
         </header>
@@ -59,7 +65,7 @@
                     {
                         title: "Newspace",
                         subTitle: "관심 키워드의 뉴스만 모아볼수 있는 사이트",
-                        youtubeLink: "https://www.youtube.com/embed/Ifed4BMACjM",
+                        youtubeLink: "https://www.youtube.com/embed/1UHzYyb5PAA&t",
                         date: "2020.01. ~ 2020.02. (6주)",
                         work: [
                             "로그인, 회원가입 UI / UX 구현",
@@ -138,7 +144,7 @@
 
             <script>
                 const modal = document.querySelectorAll(".modal");
-                const modalContent = document.querySelector(".modal-content");
+                const modalContent = document.querySelectorAll(".modal-content");
                 const close = document.querySelectorAll(".modal-position");
                 const span = document.querySelectorAll(".close");
                 const body = document.querySelector("body");
@@ -146,6 +152,7 @@
 
                 const prevbtn = document.querySelectorAll(".prevbtn");
                 const nextbtn = document.querySelectorAll(".nextbtn");
+
 
                 [...prevbtn].forEach((v, i) => {
                     if (i === 0) {
@@ -167,8 +174,10 @@
                     }
 
                     v.addEventListener("click", () => {
+                        modal[i].style.transform = "translateX(-100%)";
                         modal[i].style.opacity = 0;
                         modal[i].style.pointerEvents = "none";
+
                         modal[i + 1].style.opacity = 1;
                         modal[i + 1].style.pointerEvents = "auto";
                     })
@@ -177,8 +186,10 @@
 
 
                 function openModal(i) {
+                    //transition: transform 0.5s ease 0s, opacity 0.5s ease 0.5s;
                     modal[i].style.opacity = 1;
                     modal[i].style.pointerEvents = "auto";
+                    //modal[i].style.transition = "transform 0.5s ease 0s, opacity 0.5s ease 0.5s"
                     body.style.overflow = "hidden";
                 }
 
