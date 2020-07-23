@@ -57,19 +57,11 @@ class modal extends HTMLElement {
         </div>
         <div class="modal-body">
           <div class="video">
-            <div class="video-container">
-              <div class="jetpack-video-wrapper">
-                <span class="embed-youtube">
-                  <iframe
-                    class="youtube-player"
-                    src="` +
-      data.youtubeLink +
-      `"
-                    allowfullscreen="true"
-                  ></iframe>
-                </span>
-              </div>
-            </div>
+            <video controls class="video-content">
+              <source src="` +
+      data.video +
+      `" >
+            </video>
             <p>` +
       data.date +
       `</p>

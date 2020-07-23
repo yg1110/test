@@ -30,6 +30,19 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[path][name].[ext]",
+              context: "src/assets",
+              publicPath: "video/"
+            }
+          }
+        ]
       }
     ]
   },
@@ -40,7 +53,8 @@ module.exports = {
     })
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, "public"),
+    contentBase: path.join(__dirname, "public"),
+    compress: true,
     port: 5500
   }
 };
