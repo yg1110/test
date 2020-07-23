@@ -205,7 +205,6 @@
                 })
 
                 window.onclick = function (event) {
-                    console.log(event.target);
                     [...close].some((v, i) => {
                         if (event.target === v) {
                             modal[i].style.opacity = 0;
