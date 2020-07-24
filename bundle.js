@@ -202,6 +202,54 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 
 /***/ }),
 
+/***/ "./src/assets/video/ITFORYOU.mov":
+/*!***************************************!*\
+  !*** ./src/assets/video/ITFORYOU.mov ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"video/video/ITFORYOU.mov\");\n\n//# sourceURL=webpack:///./src/assets/video/ITFORYOU.mov?");
+
+/***/ }),
+
+/***/ "./src/assets/video/Newspace.mp4":
+/*!***************************************!*\
+  !*** ./src/assets/video/Newspace.mp4 ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"video/video/Newspace.mp4\");\n\n//# sourceURL=webpack:///./src/assets/video/Newspace.mp4?");
+
+/***/ }),
+
+/***/ "./src/assets/video/Ssafy-Shopper.mp4":
+/*!********************************************!*\
+  !*** ./src/assets/video/Ssafy-Shopper.mp4 ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"video/video/Ssafy-Shopper.mp4\");\n\n//# sourceURL=webpack:///./src/assets/video/Ssafy-Shopper.mp4?");
+
+/***/ }),
+
+/***/ "./src/assets/video/냉장고를부탁해.mp4":
+/*!**************************************!*\
+  !*** ./src/assets/video/냉장고를부탁해.mp4 ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (\"video/video/냉장고를부탁해.mp4\");\n\n//# sourceURL=webpack:///./src/assets/video/%EB%83%89%EC%9E%A5%EA%B3%A0%EB%A5%BC%EB%B6%80%ED%83%81%ED%95%B4.mp4?");
+
+/***/ }),
+
 /***/ "./src/components/footer.js":
 /*!**********************************!*\
   !*** ./src/components/footer.js ***!
@@ -277,7 +325,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _rou
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/style.css */ \"./src/style/style.css\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_modal_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/modal.css */ \"./src/style/modal.css\");\n/* harmony import */ var _style_modal_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_modal_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _style_mobile_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/mobile.css */ \"./src/style/mobile.css\");\n/* harmony import */ var _style_mobile_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_mobile_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _style_button_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style/button.scss */ \"./src/style/button.scss\");\n/* harmony import */ var _style_button_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_button_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _assets_images_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/냉장고를부탁해.png */ \"./src/assets/images/냉장고를부탁해.png\");\n/* harmony import */ var _assets_images_ItForYou_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/ItForYou.png */ \"./src/assets/images/ItForYou.png\");\n/* harmony import */ var _assets_images_Newspace_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/Newspace.png */ \"./src/assets/images/Newspace.png\");\n/* harmony import */ var _assets_images_Ssafy_Shopper_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/Ssafy-Shopper.png */ \"./src/assets/images/Ssafy-Shopper.png\");\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_header_js__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _components_nav_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/nav.js */ \"./src/components/nav.js\");\n/* harmony import */ var _components_image_pc_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/image-pc.js */ \"./src/components/image-pc.js\");\n/* harmony import */ var _components_image_pc_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_image_pc_js__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _components_image_mobile_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/image-mobile.js */ \"./src/components/image-mobile.js\");\n/* harmony import */ var _components_image_mobile_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_image_mobile_js__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/modal.js */ \"./src/components/modal.js\");\n/* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_modal_js__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/footer.js */ \"./src/components/footer.js\");\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_footer_js__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var _views_portfoilo_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./views/portfoilo.js */ \"./src/views/portfoilo.js\");\n/* harmony import */ var _router_index_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./router/index.js */ \"./src/router/index.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n // import \"./assets/video/Newspace.mp4\";\n// import \"./assets/video/Ssafy-Shopper.mp4\";\n// import \"./assets/video/냉장고를부탁해.mp4\";\n// import \"./assets/video/ITFORYOU.mov\";\n\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style/style.css */ \"./src/style/style.css\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_style_css__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_modal_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/modal.css */ \"./src/style/modal.css\");\n/* harmony import */ var _style_modal_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_modal_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _style_mobile_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/mobile.css */ \"./src/style/mobile.css\");\n/* harmony import */ var _style_mobile_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_style_mobile_css__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _style_button_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style/button.scss */ \"./src/style/button.scss\");\n/* harmony import */ var _style_button_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_style_button_scss__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _assets_images_png__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./assets/images/냉장고를부탁해.png */ \"./src/assets/images/냉장고를부탁해.png\");\n/* harmony import */ var _assets_images_ItForYou_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./assets/images/ItForYou.png */ \"./src/assets/images/ItForYou.png\");\n/* harmony import */ var _assets_images_Newspace_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./assets/images/Newspace.png */ \"./src/assets/images/Newspace.png\");\n/* harmony import */ var _assets_images_Ssafy_Shopper_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./assets/images/Ssafy-Shopper.png */ \"./src/assets/images/Ssafy-Shopper.png\");\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/header.js */ \"./src/components/header.js\");\n/* harmony import */ var _components_header_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_header_js__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _components_nav_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/nav.js */ \"./src/components/nav.js\");\n/* harmony import */ var _components_image_pc_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/image-pc.js */ \"./src/components/image-pc.js\");\n/* harmony import */ var _components_image_pc_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_components_image_pc_js__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _components_image_mobile_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/image-mobile.js */ \"./src/components/image-mobile.js\");\n/* harmony import */ var _components_image_mobile_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_components_image_mobile_js__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/modal.js */ \"./src/components/modal.js\");\n/* harmony import */ var _components_modal_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_components_modal_js__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/footer.js */ \"./src/components/footer.js\");\n/* harmony import */ var _components_footer_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_components_footer_js__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var _views_portfoilo_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./views/portfoilo.js */ \"./src/views/portfoilo.js\");\n/* harmony import */ var _assets_video_Newspace_mp4__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./assets/video/Newspace.mp4 */ \"./src/assets/video/Newspace.mp4\");\n/* harmony import */ var _assets_video_Ssafy_Shopper_mp4__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./assets/video/Ssafy-Shopper.mp4 */ \"./src/assets/video/Ssafy-Shopper.mp4\");\n/* harmony import */ var _assets_video_mp4__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./assets/video/냉장고를부탁해.mp4 */ \"./src/assets/video/냉장고를부탁해.mp4\");\n/* harmony import */ var _assets_video_ITFORYOU_mov__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./assets/video/ITFORYOU.mov */ \"./src/assets/video/ITFORYOU.mov\");\n/* harmony import */ var _utils_init_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./utils/init.js */ \"./src/utils/init.js\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObject(_utils_init_js__WEBPACK_IMPORTED_MODULE_19__[\"default\"])();\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -289,7 +337,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_portfoilo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/portfoilo */ \"./src/views/portfoilo.js\");\n/* harmony import */ var _views_skill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/skill */ \"./src/views/skill.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) {\n  switch (path) {\n    case \"Home\":\n      {\n        var router = document.querySelector(\".router-view\");\n        var newRouter = document.createElement(path.toLowerCase() + \"-router-view\");\n        router.firstElementChild.remove();\n        router.appendChild(newRouter);\n        customElements.define(path.toLowerCase() + \"-router-view\", _views_portfoilo__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n        break;\n      }\n\n    case \"About\":\n      {\n        alert(\"아직 완성하지 않은 페이지 입니다.\");\n        break;\n      }\n\n    default:\n      {\n        var _router = document.querySelector(\".router-view\");\n\n        var _newRouter = document.createElement(path.toLowerCase() + \"-router-view\");\n\n        _router.firstElementChild.remove();\n\n        _router.appendChild(_newRouter);\n\n        customElements.define(path.toLowerCase() + \"-router-view\", _views_skill__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n        break;\n      }\n  }\n});\n\n//# sourceURL=webpack:///./src/router/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_portfoilo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/portfoilo */ \"./src/views/portfoilo.js\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function (path) {\n  switch (path) {\n    case \"Home\":\n      {\n        var router = document.querySelector(\".router-view\");\n        var newRouter = document.createElement(path.toLowerCase() + \"-router-view\");\n        router.firstElementChild.remove();\n        router.appendChild(newRouter);\n        break;\n      }\n\n    case \"About\":\n      {\n        alert(\"아직 완성하지 않은 페이지 입니다.\");\n        break;\n      }\n\n    default:\n      {\n        var _router = document.querySelector(\".router-view\");\n\n        var _newRouter = document.createElement(path.toLowerCase() + \"-router-view\");\n\n        _router.firstElementChild.remove();\n\n        _router.appendChild(_newRouter);\n\n        break;\n      }\n  }\n});\n\n//# sourceURL=webpack:///./src/router/index.js?");
 
 /***/ }),
 
@@ -334,6 +382,18 @@ eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/run
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style/style.css\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack:///./src/style/style.css?");
+
+/***/ }),
+
+/***/ "./src/utils/init.js":
+/*!***************************!*\
+  !*** ./src/utils/init.js ***!
+  \***************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _views_portfoilo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../views/portfoilo */ \"./src/views/portfoilo.js\");\n/* harmony import */ var _views_skill__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../views/skill */ \"./src/views/skill.js\");\n\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function () {\n  var router = document.querySelector(\".router-view\");\n\n  if (router !== null) {\n    var homeRouter = document.createElement(\"home-router-view\");\n    var skillRouter = document.createElement(\"skill-router-view\");\n    router.appendChild(homeRouter);\n    router.appendChild(skillRouter);\n    customElements.get(\"home-router-view\") || customElements.define(\"home-router-view\", _views_portfoilo__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n    customElements.get(\"skill-router-view\") || customElements.define(\"skill-router-view\", _views_skill__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n    router.lastChild.remove();\n  }\n});\n\n//# sourceURL=webpack:///./src/utils/init.js?");
 
 /***/ }),
 
