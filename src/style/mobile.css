@@ -2,16 +2,31 @@
   display: none;
 }
 
+.modal-section {
+  display: block;
+}
+
 @media all and (max-width: 999px) {
+  .modal-section {
+    display: none;
+  }
+
   .image-content-pc {
     display: none;
   }
+
   .image-content-mobile {
     display: block;
   }
+
   .modal-content {
     height: 100%;
     width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .modal-content:nth-child(4) {
+    margin-bottom: 0;
   }
 
   .modal-body {

@@ -14,8 +14,12 @@ import "./components/image-pc.js";
 import "./components/image-mobile.js";
 import "./components/modal.js";
 import "./components/footer.js";
+import "./views/portfoilo.js";
 
-// import "./assets/video/Newspace.mp4";
-// import "./assets/video/Ssafy-Shopper.mp4";
-// import "./assets/video/냉장고를부탁해.mp4";
-// import "./assets/video/ITFORYOU.mov";
+import "./assets/video/Newspace.mp4";
+import "./assets/video/Ssafy-Shopper.mp4";
+import "./assets/video/냉장고를부탁해.mp4";
+import "./assets/video/ITFORYOU.mov";
+
+import init from "./utils/init.js";
+init();

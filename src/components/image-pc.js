@@ -9,15 +9,19 @@ class image extends HTMLElement {
     // DOM에 추가되면 실행되는 method;
     this.innerHTML = this.htmlparser();
   }
+
   disconnectedCallback() {
     // DOM에서 제거면 실행되는 method
   }
+
   attributeChangedCallback(attrName, oldVal, newVal) {
     // 속성이 추가/제거/변경되면 실행되는 method
   }
+
   adoptedCallback(oldDoc, newDoc) {
     // 다른 Document에서 옮겨지면 실행되는 method
   }
+
   htmlparser() {
     return `
     <ul>
@@ -39,7 +43,7 @@ class image extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <img class="image" src="./images/Ssafy-Shopper.png" alt="Ssafy-Shopper" onclick="openModal(0)">
+                <img class="image" src="./images/Ssafy-Shopper.png" alt="Ssafy-Shopper">
             </div>
         </li>
         <li>
@@ -60,7 +64,7 @@ class image extends HTMLElement {
                     </div>
                 </div>
 
-                <img class="image" src="./images/Newspace.png" alt="Newspace" onclick="openModal(1)">
+                <img class="image" src="./images/Newspace.png" alt="Newspace">
             </div>
         </li>
         <li>
@@ -81,7 +85,7 @@ class image extends HTMLElement {
                     </div>
                 </div>
 
-                <img class="image" src="./images/냉장고를부탁해.png" alt="냉장고를부탁해" onclick="openModal(2)">
+                <img class="image" src="./images/냉장고를부탁해.png" alt="냉장고를부탁해">
             </div>
         </li>
         <li>
@@ -101,7 +105,7 @@ class image extends HTMLElement {
                         </div>
                     </div>
                 </div>
-                <img class="image" src="./images/ItForYou.png" alt="ItForYou" onclick="openModal(3)">
+                <img class="image" src="./images/ItForYou.png" alt="ItForYou">
             </div>
         </li>
     </ul>

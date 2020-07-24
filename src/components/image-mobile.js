@@ -51,6 +51,9 @@ class image extends HTMLElement {
       data.subTitle +
       ` -</h3>
     </div>
+    ` +
+      this.tag(data) +
+      `
     <div class="modal-body">
       <div class="video">
         <video class="video-content" controls allowfullscreen>
@@ -68,9 +71,6 @@ class image extends HTMLElement {
       `
         </ul>
       </div>
-    <div class="modal-footer">` +
-      this.tag(data) +
-      `
     </div>
   </div>
     `
