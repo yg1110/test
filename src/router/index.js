@@ -1,4 +1,3 @@
-import portfoilo from "../views/portfoilo";
 export default path => {
   switch (path) {
     case "Home": {
