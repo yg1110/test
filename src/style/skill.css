@@ -21,21 +21,19 @@
   display: flex;
   padding: 20px;
   border-bottom: 1px dashed black;
+  font-size: large;
 }
 
-.skill-description-name,
+.skill-description-name {
+  width: 30%;
+  line-height: 50px;
+}
+
 .skill-description-link {
-  width: 50%;
+  width: 70%;
+  line-height: 50px;
 }
 
 .skill-description-link i {
   color: #8b8b8b;
-}
-
-.skill-description-link div {
-  margin-bottom: 30px;
-}
-
-.skill-description-link div:last-child {
-  margin-bottom: 0;
 }
