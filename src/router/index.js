@@ -12,7 +12,14 @@ export default path => {
       break;
     }
     case "About": {
-      alert("아직 완성하지 않은 페이지 입니다.");
+      const router = document.querySelector(".router-view");
+
+      const newRouter = document.createElement(
+        path.toLowerCase() + "-router-view"
+      );
+
+      router.firstElementChild.remove();
+      router.appendChild(newRouter);
       break;
     }
 

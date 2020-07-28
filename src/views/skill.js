@@ -159,6 +159,39 @@ class skill extends HTMLElement {
     </div>
 
     <div class="skill-content">
+      <h2 class="skill-title">서버 (Spring & DB)</h2>
+      <div class="skill-description">
+      <div class="skill-description-name">DB</div>
+        <div class="skill-description-link">
+          <div>Spring MyBatis를 이용한 SQL연동 가능</div>
+        </div>
+      </div>
+
+      <div class="skill-description">
+        <div class="skill-description-name">통신방식</div>
+        <div class="skill-description-link">
+          <div>RESTful API 사용으로 유연한 통신방식 경험</div>
+        </div>
+      </div>
+
+      <div class="skill-description">
+        <div class="skill-description-name">소셜로그인</div>
+        <div class="skill-description-link">
+          <div>Oauth2.0 / FirebaseAuth를 이용한 소셜로그인 구현</div>
+        </div>
+      </div>
+
+      <div class="skill-description">
+        <div class="skill-description-name">시큐어코딩</div>
+        <div class="skill-description-link">
+          <div>SpringSecurity를 이용한 권한에 따른 페이지 조작</div>
+          <div>DB추가시 XSS-filter 적용</div>
+          <div>데이터 통신시 JWT를 이용한 암호화 적용</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skill-content">
       <h2 class="skill-title">협업 툴</h2>
       <div class="skill-description">
         <div class="skill-description-name">GIT</div>
@@ -169,7 +202,6 @@ class skill extends HTMLElement {
         <div class="skill-description-link">협업 프로젝트 계획을 세울때 사용한 경험 있습니다.</div>
       </div>
     </div>
-
     `;
   }
 }

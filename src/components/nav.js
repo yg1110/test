@@ -31,7 +31,7 @@ class nav extends HTMLElement {
   htmlparser() {
     return `
     <ul>
-        <li><a href="#" class="navbtn">Home</a></li>
+        <li><a href="#" class="navbtn active">Home</a></li>
         <li><a href="#" class="navbtn">About</a></li>
         <li><a href="#" class="navbtn">Skill</a></li>
     </ul>
@@ -42,6 +42,9 @@ class nav extends HTMLElement {
     const a = document.querySelectorAll(".navbtn");
     [...a].forEach((v, i) => {
       v.addEventListener("click", () => {
+        const active = document.querySelector(".active");
+        active.classList.remove("active");
+        v.classList.add("active");
         router(v.innerText);
       });
     });

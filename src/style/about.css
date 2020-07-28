@@ -1,0 +1,71 @@
+.about-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px;
+}
+
+.academic-content {
+  width: 100%;
+  padding: 50px;
+}
+
+.academic-title {
+  display: inline;
+  border-bottom: 5px solid black;
+}
+
+.academic-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
+}
+
+.academic-description {
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px dashed black;
+  font-size: large;
+}
+
+.academic-description-date {
+  width: 20%;
+  line-height: 50px;
+}
+
+.academic-description-name {
+  width: 50%;
+  line-height: 50px;
+}
+
+.academic-description-department {
+  width: 30%;
+  text-align: center;
+  line-height: 50px;
+}
+
+.introduction-content {
+  width: 100%;
+  padding: 30px;
+  border: 1px solid #e2e2e2;
+}
+
+.introduction-answer {
+  margin: 20px 30px;
+}
+
+.introduction-body {
+  margin-bottom: 50px;
+}
+
+.introduction-body:last-child {
+  margin-bottom: 0;
+}
+
+.introduction-answer h4 {
+  line-height: 40px;
+}

@@ -1,4 +1,5 @@
 import portfoilo from "../views/portfoilo";
+import about from "../views/about";
 import skill from "../views/skill";
 
 export default () => {
@@ -6,17 +7,24 @@ export default () => {
 
   if (router !== null) {
     const homeRouter = document.createElement("home-router-view");
+    const aboutRouter = document.createElement("about-router-view");
     const skillRouter = document.createElement("skill-router-view");
 
     router.appendChild(homeRouter);
+    router.appendChild(aboutRouter);
     router.appendChild(skillRouter);
 
     customElements.get("home-router-view") ||
       customElements.define("home-router-view", portfoilo);
 
+    customElements.get("about-router-view") ||
+      customElements.define("about-router-view", about);
+
     customElements.get("skill-router-view") ||
       customElements.define("skill-router-view", skill);
-    // router.lastChild.remove();
-    router.firstChild.remove();
+
+    // router.firstChild.remove();
+    router.lastChild.remove();
+    router.lastChild.remove();
   }
 };

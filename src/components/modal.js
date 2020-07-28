@@ -78,6 +78,9 @@ class modal extends HTMLElement {
         modal[i].style.opacity = 0;
         modal[i].style.pointerEvents = "none";
 
+        video[i].pause();
+        video[i].currentTime = 0;
+
         modal[i + 1].style.opacity = 1;
         modal[i + 1].style.pointerEvents = "auto";
       });
@@ -87,8 +90,9 @@ class modal extends HTMLElement {
       v.addEventListener("click", () => {
         modal[i].style.opacity = 0;
         modal[i].style.pointerEvents = "none";
-        video[i].currentTime = 0;
+        console.log(video[i].currentTime);
         video[i].pause();
+        video[i].currentTime = 0;
         body.style.overflow = "auto";
       });
     });
@@ -98,8 +102,8 @@ class modal extends HTMLElement {
         if (event.target === v) {
           modal[i].style.opacity = 0;
           modal[i].style.pointerEvents = "none";
-          video[i].currentTime = 0;
           video[i].pause();
+          video[i].currentTime = 0;
           body.style.overflow = "auto";
           return true;
         }
@@ -142,7 +146,7 @@ class modal extends HTMLElement {
         </div>
         <div class="modal-body">
           <div class="video">
-            <video class="video-content" controls allowfullscreen>
+            <video class="video-content" controls>
               <source src="` +
       data.video +
       `" >
