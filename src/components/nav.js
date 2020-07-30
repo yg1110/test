@@ -43,8 +43,10 @@ class nav extends HTMLElement {
     [...a].forEach((v, i) => {
       v.addEventListener("click", () => {
         const active = document.querySelector(".active");
+        active.style.pointerEvents = "auto";
         active.classList.remove("active");
         v.classList.add("active");
+        v.style.pointerEvents = "none";
         router(v.innerText);
       });
     });

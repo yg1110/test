@@ -42,6 +42,10 @@ header {
   text-align: center;
 }
 
+header a {
+  pointer-events: none;
+}
+
 header a,
 nav a {
   width: 100%;
@@ -70,6 +74,10 @@ nav li a {
   color: #8b8b8b;
   font-size: 20px;
   padding: 20px;
+}
+
+nav li:nth-child(1) {
+  pointer-events: none;
 }
 
 .gallery ul {
