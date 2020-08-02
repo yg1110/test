@@ -2,23 +2,32 @@ class modal extends HTMLElement {
   constructor() {
     super();
   }
+
+  static create(el) {
+    return new CurrentTime(el);
+  }
+
   static get observedAttributes() {
     // 모니터링 할 속성 이름
-    return ["data-props"];
+    return ["data-props", "data-play"];
   }
-  connectedCallback() {
-    // DOM에 추가되면 실행되는 method;
-  }
+
+  connectedCallback() {}
+
   disconnectedCallback() {
-    // DOM에서 제거면 실행되는 method
+    document.removeEventListener("readystatechange", this.handleChange);
+    super.disconnectedCallback();
   }
+
   attributeChangedCallback(attrName, oldVal, newVal) {
-    const modal = document.querySelectorAll(".modal");
-    this[attrName] = newVal;
-    this.innerHTML = this.htmlparser(JSON.parse(newVal));
-    if (modal.length === 3) {
-      this.script();
-      this.addOpenMoalEvent();
+    if (attrName === "data-props") {
+      const modal = document.querySelectorAll(".modal");
+      this[attrName] = newVal;
+      this.innerHTML = this.htmlparser(JSON.parse(newVal));
+      if (modal.length === 3) {
+        this.script();
+        this.addOpenMoalEvent();
+      }
     }
   }
 
@@ -28,10 +37,6 @@ class modal extends HTMLElement {
 
   work(data) {
     return data.work.reduce((htmlTag, v) => {
-      // let li = document.createElement("li");
-      // li.innerText = v;
-      // console.log("<li>" + v + "</li>");
-      // console.log(li.value);
       htmlTag += "<li>" + v + "</li>";
       return htmlTag;
     }, "");
@@ -49,11 +54,11 @@ class modal extends HTMLElement {
     const close = document.querySelectorAll(".modal-position");
     const span = document.querySelectorAll(".close");
     const body = document.querySelector("body");
-    const video = document.querySelectorAll(".video-content");
+    const video = document.querySelectorAll("video");
+    const source = document.querySelectorAll("source");
 
     const prevbtn = document.querySelectorAll(".prevbtn");
     const nextbtn = document.querySelectorAll(".nextbtn");
-
     [...prevbtn].forEach((v, i) => {
       if (i === 0) {
         prevbtn[i].style.display = "none";
@@ -90,7 +95,7 @@ class modal extends HTMLElement {
       v.addEventListener("click", () => {
         modal[i].style.opacity = 0;
         modal[i].style.pointerEvents = "none";
-        console.log(video[i].currentTime);
+        video[i].setAttribute("data-play", false);
         video[i].pause();
         video[i].currentTime = 0;
         body.style.overflow = "auto";
@@ -102,8 +107,7 @@ class modal extends HTMLElement {
         if (event.target === v) {
           modal[i].style.opacity = 0;
           modal[i].style.pointerEvents = "none";
-          video[i].pause();
-          video[i].currentTime = 0;
+
           body.style.overflow = "auto";
           return true;
         }
@@ -175,5 +179,6 @@ class modal extends HTMLElement {
     );
   }
 }
+
 customElements.get("modal-content") ||
   customElements.define("modal-content", modal);

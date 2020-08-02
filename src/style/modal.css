@@ -90,18 +90,10 @@
 }
 
 .modal-header h3 {
+  font-family: "S-CoreDream-9Black";
   margin-top: 10px;
   color: #9da7a6;
 }
-
-/* .modal-header::after {
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  content: "";
-  width: 90%;
-  border-bottom: solid 1px #e2e2e2;
-} */
 
 .modal-body {
   display: flex;
@@ -109,19 +101,6 @@
   padding: 10px 40px;
   padding-bottom: 0;
 }
-
-/* .border {
-  display: inline-block;
-  width: 100%;
-  padding: 0 40px;
-}
-
-.border::after {
-  display: inline-block;
-  content: "";
-  width: 100%;
-  border-bottom: solid 1px #e2e2e2;
-} */
 
 .modal-body > * {
   margin: 20px 0;
@@ -138,19 +117,19 @@
 
 .video p {
   color: #9da7a6;
-  font-family: "ImcreSoojin";
+  font-family: "S-CoreDream-9Black";
   font-size: 17px;
   font-weight: bold;
   margin-top: 10px;
 }
 
 .projectDesciption {
+  font-family: "Black Han Sans", sans-serif;
   padding-left: 3%;
   width: 40%;
 }
 
 .projectDesciption li {
-  font-family: "ImcreSoojin";
   margin: 20px;
 }
 
