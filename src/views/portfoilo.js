@@ -85,7 +85,6 @@ class portfolio extends HTMLElement {
           "레시피 목록 UI / UX 구현",
           "레시피 재료선택 UI / UX 구현",
           "레시피 상세페이지 UI / UX 구현",
-          "자신의 강점, 틀린문제 분석 차트 출력",
           "인식률에 따른 재료 아이콘 색깔조정",
           "Vuex를 이용한 실시간 상태관리",
           "PWA 적용"
@@ -110,6 +109,7 @@ class portfolio extends HTMLElement {
           "단어장 UI / UX 구현",
           "오답노트 UI / UX 구현",
           "문제풀이 알고리즘 구현",
+          "자신의 강점, 틀린문제 분석 차트 출력",
           "transform 애니메이션 적용",
           "Vuex를 이용한 상태관리",
           "PWA 적용"

@@ -66,7 +66,7 @@ class skill extends HTMLElement {
     </div>
 
     <div class="skill-content">
-      <h2 class="skill-title">JavaScirpt</h2>
+      <h2 class="skill-title">JavaScirpt(TypeScript)</h2>
       <div class="skill-description">
         <div class="skill-description-name">기초문법</div>
         <div class="skill-description-link">
@@ -76,6 +76,7 @@ class skill extends HTMLElement {
             <div>this와 스코프에 대한 이해</div>
             <div>클로저에 대한 이해</div>
             <div>모듈화 가능</div>
+            <div>React에 TypeScript를 적용하여 프로젝트 진행 중</div>
         </div>
       </div>
       <div class="skill-description">
@@ -154,7 +155,7 @@ class skill extends HTMLElement {
       </div>
       <div class="skill-description">
         <div class="skill-description-name">프로젝트 경험</div>
-        <div class="skill-description-link">개인 프로젝트 1회(Todo List)</div>
+        <div class="skill-description-link">물물교환 사이트 제작 협업프로젝트 진행 중(3인)</div>
       </div>
     </div>
 
