@@ -9,7 +9,7 @@ class modal extends HTMLElement {
 
   static get observedAttributes() {
     // 모니터링 할 속성 이름
-    return ["data-props", "data-play"];
+    return ["data-props"];
   }
 
   connectedCallback() {}
@@ -20,6 +20,7 @@ class modal extends HTMLElement {
   }
 
   attributeChangedCallback(attrName, oldVal, newVal) {
+    console.log(attrName);
     if (attrName === "data-props") {
       const modal = document.querySelectorAll(".modal");
       this[attrName] = newVal;
@@ -52,10 +53,9 @@ class modal extends HTMLElement {
   script() {
     const modal = document.querySelectorAll(".modal");
     const close = document.querySelectorAll(".modal-position");
-    const span = document.querySelectorAll(".close");
+    const closeBtn = document.querySelectorAll(".close");
     const body = document.querySelector("body");
     const video = document.querySelectorAll("video");
-    const source = document.querySelectorAll("source");
 
     const prevbtn = document.querySelectorAll(".prevbtn");
     const nextbtn = document.querySelectorAll(".nextbtn");
@@ -67,6 +67,14 @@ class modal extends HTMLElement {
       v.addEventListener("click", () => {
         modal[i].style.opacity = 0;
         modal[i].style.pointerEvents = "none";
+
+        [...video].map((v) => {
+          if (v.currentTime !== 0) {
+            v.currentTime = 0;
+            v.pause();
+          }
+        });
+
         modal[i - 1].style.opacity = 1;
         modal[i - 1].style.pointerEvents = "auto";
       });
@@ -79,34 +87,49 @@ class modal extends HTMLElement {
       }
 
       v.addEventListener("click", () => {
-        //modal[i].style.transform = "translateX(-100%)";
         modal[i].style.opacity = 0;
         modal[i].style.pointerEvents = "none";
 
-        video[i].pause();
-        video[i].currentTime = 0;
+        [...video].map((v) => {
+          if (v.currentTime !== 0) {
+            v.currentTime = 0;
+            v.pause();
+          }
+        });
 
         modal[i + 1].style.opacity = 1;
         modal[i + 1].style.pointerEvents = "auto";
       });
     });
 
-    [...span].forEach((v, i) => {
+    [...closeBtn].forEach((v, i) => {
       v.addEventListener("click", () => {
         modal[i].style.opacity = 0;
         modal[i].style.pointerEvents = "none";
-        video[i].setAttribute("data-play", false);
-        video[i].pause();
-        video[i].currentTime = 0;
+
+        [...video].map((v) => {
+          if (v.currentTime !== 0) {
+            v.currentTime = 0;
+            v.pause();
+          }
+        });
+
         body.style.overflow = "auto";
       });
     });
 
-    window.onclick = function(event) {
+    window.onclick = function (event) {
       [...close].some((v, i) => {
         if (event.target === v) {
           modal[i].style.opacity = 0;
           modal[i].style.pointerEvents = "none";
+
+          [...video].map((v) => {
+            if (v.currentTime !== 0) {
+              v.currentTime = 0;
+              v.pause();
+            }
+          });
 
           body.style.overflow = "auto";
           return true;
@@ -125,7 +148,6 @@ class modal extends HTMLElement {
       v.addEventListener("click", () => {
         modal[i].style.opacity = 1;
         modal[i].style.pointerEvents = "auto";
-        //modal[i].style.transition = "transform 0.5s ease 0s, opacity 0.5s ease 0.5s"
         body.style.overflow = "hidden";
       });
     });

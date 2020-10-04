@@ -23,10 +23,6 @@ class image extends HTMLElement {
 
   work(data) {
     return data.work.reduce((htmlTag, v) => {
-      // let li = document.createElement("li");
-      // li.innerText = v;
-      // console.log("<li>" + v + "</li>");
-      // console.log(li.value);
       htmlTag += "<li class='test'>" + v + "</li>";
       return htmlTag;
     }, "");

@@ -108,6 +108,27 @@ class image extends HTMLElement {
                 <img class="image" src="./images/ItForYou.png" alt="ItForYou">
             </div>
         </li>
+        <li>
+        <div class="imageContainer">
+            <div class="imageDescription">
+                <div class="content">
+                    <div class="bg-overlay"></div>
+                    <div class="v-border"></div>
+                    <div class="h-border"></div>
+                    <div class="info">
+                        <div class="title">
+                            Unithis
+                        </div>
+                        <div class="desciption">
+                            - 중고거래 플랫폼 -
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img class="image" src="./images/Unithis.png" alt="Unithis">
+        </div>
+    </li>
+
     </ul>
     `;
   }
