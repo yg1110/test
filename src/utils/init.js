@@ -23,7 +23,6 @@ export default () => {
     customElements.get("skill-router-view") ||
       customElements.define("skill-router-view", skill);
 
-    // router.firstChild.remove();
     router.lastChild.remove();
     router.lastChild.remove();
   }

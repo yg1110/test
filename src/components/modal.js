@@ -1,3 +1,5 @@
+import { PortfolioInfoLength } from "../__fixtures__/PortfolioInfo";
+
 class modal extends HTMLElement {
   constructor() {
     super();
@@ -8,11 +10,8 @@ class modal extends HTMLElement {
   }
 
   static get observedAttributes() {
-    // 모니터링 할 속성 이름
     return ["data-props"];
   }
-
-  connectedCallback() {}
 
   disconnectedCallback() {
     document.removeEventListener("readystatechange", this.handleChange);
@@ -20,20 +19,15 @@ class modal extends HTMLElement {
   }
 
   attributeChangedCallback(attrName, oldVal, newVal) {
-    console.log(attrName);
     if (attrName === "data-props") {
       const modal = document.querySelectorAll(".modal");
       this[attrName] = newVal;
       this.innerHTML = this.htmlparser(JSON.parse(newVal));
-      if (modal.length === 3) {
+      if (modal.length === PortfolioInfoLength - 1) {
         this.script();
         this.addOpenMoalEvent();
       }
     }
-  }
-
-  adoptedCallback(oldDoc, newDoc) {
-    // 다른 Document에서 옮겨지면 실행되는 method
   }
 
   work(data) {
@@ -145,6 +139,7 @@ class modal extends HTMLElement {
     const body = document.querySelector("body");
 
     [...image].forEach((v, i) => {
+      if (i === image.length - 1) return;
       v.addEventListener("click", () => {
         modal[i].style.opacity = 1;
         modal[i].style.pointerEvents = "auto";

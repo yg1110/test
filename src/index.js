@@ -9,6 +9,8 @@ import "./assets/images/냉장고를부탁해.png";
 import "./assets/images/ItForYou.png";
 import "./assets/images/Newspace.png";
 import "./assets/images/Ssafy-Shopper.png";
+import "./assets/images/Unithis.png";
+import "./assets/images/진행중.png";
 import "./assets/favicon.png";
 
 import "./components/header.js";
@@ -22,6 +24,7 @@ import "./assets/video/Newspace.mp4";
 import "./assets/video/Ssafy-Shopper.mp4";
 import "./assets/video/냉장고를부탁해.mp4";
 import "./assets/video/ITFORYOU.mov";
+import "./assets/video/Unithis.mp4";
 
 import init from "./utils/init.js";
 init();

@@ -90,7 +90,7 @@ class skill extends HTMLElement {
       <div class="skill-description">
         <div class="skill-description-name">Vanilla 프로젝트 경험</div>
         <div class="skill-description-link">
-          <div>개인 프로젝트 1회(현재 페이지)</div>
+          <div>개인 프로젝트 1회(현재 포트폴리오 페이지)</div>
         </div>
       </div>
     </div>
@@ -150,15 +150,29 @@ class skill extends HTMLElement {
         <div class="skill-description-link">memo, useMemo, useCallback 사용 가능</div>
       </div>
       <div class="skill-description">
-        <div class="skill-description-name">데이터 전달</div>
-        <div class="skill-description-link">Reducer, ContextAPI를 이용한 데이터 전달 가능</div>
+        <div class="skill-description-name">상태관리</div>
+        <div class="skill-description-link">Redux, ContextAPI를 이용한 상태관리 가능</div>
+      </div>
+      <div class="skill-description">
+        <div class="skill-description-name">스타일</div>
+        <div class="skill-description-link">styled component(emotion) 컴포넌트별 스타일 적용가능</div>
       </div>
       <div class="skill-description">
         <div class="skill-description-name">프로젝트 경험</div>
-        <div class="skill-description-link">물물교환 사이트 제작 협업프로젝트 진행 중(3인)</div>
+        <div class="skill-description-link">물물교환 사이트 제작 협업프로젝트 진행 중(3인)<br>
+        프로그래머스 사이트 클론(3인)
+        </div>
       </div>
     </div>
 
+    <div class="skill-content">
+      <h2 class="skill-title">Storybook</h2>
+      <div class="skill-description">
+        <div class="skill-description-name">Storybook</div>
+        <div class="skill-description-link">React환경에서 화면 테스트를 위한 Storybook 사용경험</div>
+      </div>
+    </div>
+  
     <div class="skill-content">
       <h2 class="skill-title">서버 (Spring & DB)</h2>
       <div class="skill-description">
@@ -196,11 +210,11 @@ class skill extends HTMLElement {
       <h2 class="skill-title">협업 툴</h2>
       <div class="skill-description">
         <div class="skill-description-name">GIT</div>
-        <div class="skill-description-link">협업시 브렌치를 따로 나누어 개발한 경험 있음</div>
+        <div class="skill-description-link">협업시 브렌치를 따로 나누어 개발한 경험</div>
       </div>
       <div class="skill-description">
         <div class="skill-description-name">JIRA & Notion</div>
-        <div class="skill-description-link">협업 프로젝트 계획을 세울때 사용한 경험 있습니다.</div>
+        <div class="skill-description-link">협업 프로젝트 계획을 세울때 사용한 경험</div>
       </div>
     </div>
     `;

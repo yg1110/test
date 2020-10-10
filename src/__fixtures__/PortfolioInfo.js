@@ -127,3 +127,5 @@ export const PortfolioInfo = [
     ],
   },
 ];
+
+export const PortfolioInfoLength = PortfolioInfo.length;

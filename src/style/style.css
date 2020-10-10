@@ -149,9 +149,6 @@ img {
   height: 395px;
   cursor: pointer;
   transition: opacity 0.5s ease-out;
-
-  /* box-shadow: 2px 2px 4px 0 #ccc; */
-  /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); */
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.2);
   border-radius: 6px;
 }

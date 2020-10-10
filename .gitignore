@@ -112,3 +112,5 @@ temp/
 
 ### VisualStudioCode Patch ###
 .history
+
+dist/

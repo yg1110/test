@@ -4,22 +4,10 @@ class portfolio extends HTMLElement {
   constructor() {
     super();
   }
-  static get observedAttributes() {
-    // 모니터링 할 속성 이름
-  }
+
   connectedCallback() {
-    // DOM에 추가되면 실행되는 method;
-    this.innerHTML = this.htmlparser();
+    this.innerHTML = this.htmlparser(PortfolioInfo);
     this.script();
-  }
-  disconnectedCallback() {
-    // DOM에서 제거면 실행되는 method
-  }
-  attributeChangedCallback(attrName, oldVal, newVal) {
-    // 속성이 추가/제거/변경되면 실행되는 method
-  }
-  adoptedCallback(oldDoc, newDoc) {
-    // 다른 Document에서 옮겨지면 실행되는 method
   }
 
   script() {
@@ -33,22 +21,25 @@ class portfolio extends HTMLElement {
       mobileImageContent[i].setAttribute("data-props", JSON.stringify(data));
     });
   }
-  htmlparser() {
+  htmlparser(PortfolioInfo) {
+    let imageContent = "";
+    let modalContent = "";
+
+    PortfolioInfo.forEach((v) => {
+      imageContent += `<image-content-mobile class="image-content-mobile"></image-content-mobile>`;
+      modalContent += `<modal-content class="modal-content"></modal-content>`;
+    });
+
     return (
       `
         <section class="gallery">
             <image-content-pc class="image-content-pc"></image-content-pc>` +
-      PortfolioInfo.map(
-        (v) =>
-          `<image-content-mobile class="image-content-mobile"></image-content-mobile>`
-      ) +
+      imageContent +
       `
       </section>
 
         <section class="modal-section">` +
-      PortfolioInfo.map(
-        (v) => `<modal-content class="modal-content"></modal-content>`
-      ) +
+      modalContent +
       `</section>`
     );
   }

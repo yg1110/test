@@ -6,17 +6,17 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   module: {
     rules: [
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
@@ -26,10 +26,10 @@ module.exports = {
             options: {
               name: "[path][name].[ext]",
               context: "src/assets",
-              publicPath: "images/"
-            }
-          }
-        ]
+              publicPath: "images/",
+            },
+          },
+        ],
       },
       {
         test: /\.(mov|mp4)$/,
@@ -39,29 +39,29 @@ module.exports = {
             options: {
               name: "[path][name].[ext]",
               context: "src/assets",
-              publicPath: "video/"
-            }
-          }
-        ]
+              publicPath: "video/",
+            },
+          },
+        ],
       },
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: "babel-loader"
-        }
-      }
-    ]
+          loader: "babel-loader",
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebPackPlugin({
       template: "./public/index.html",
-      filename: "index.html"
-    })
+      filename: "index.html",
+    }),
   ],
   devServer: {
     contentBase: path.join(__dirname, "public"),
     compress: true,
-    port: 5500
-  }
+    port: 5500,
+  },
 };
