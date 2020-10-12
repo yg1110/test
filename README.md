@@ -6,7 +6,7 @@
 </h1>
 
 <p align="center">
-  <img alt="Top langauage" src="https://https://img.shields.io/github/languages/top/yg1110/Portfolio">
+  <img alt="Top langauage" src="https://img.shields.io/github/languages/top/yg1110/Portfolio">
 </p>
 
 <h4 align="center">YG1110 Portfolio</h4>
