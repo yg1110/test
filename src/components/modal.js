@@ -139,7 +139,6 @@ class modal extends HTMLElement {
     const body = document.querySelector("body");
 
     [...image].forEach((v, i) => {
-      // if (i === image.length - 1) return;
       v.addEventListener("click", () => {
         modal[i].style.opacity = 1;
         modal[i].style.pointerEvents = "auto";
@@ -171,7 +170,6 @@ class modal extends HTMLElement {
           data.title +
           `"></a>`;
 
-    console.log(video);
     return (
       `
     <div id="modal" class="modal">

@@ -159,7 +159,7 @@ class skill extends HTMLElement {
       </div>
       <div class="skill-description">
         <div class="skill-description-name">프로젝트 경험</div>
-        <div class="skill-description-link">물물교환 사이트 제작 협업프로젝트 진행 중(3인)<br>
+        <div class="skill-description-link">물물교환 사이트(3인)<br>
         프로그래머스 사이트 클론(3인)
         </div>
       </div>
