@@ -26,7 +26,7 @@ export const PortfoiloPreview = [
   },
   {
     title: "프로그래머스 클론",
-    desciption: "- 현재 진행중 -",
-    imagePath: "./images/진행중.png",
+    desciption: "- React 학습용 클론 프로젝트 -",
+    imagePath: "./images/프로그래머스.png",
   },
 ];

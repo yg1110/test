@@ -139,7 +139,7 @@ class modal extends HTMLElement {
     const body = document.querySelector("body");
 
     [...image].forEach((v, i) => {
-      if (i === image.length - 1) return;
+      // if (i === image.length - 1) return;
       v.addEventListener("click", () => {
         modal[i].style.opacity = 1;
         modal[i].style.pointerEvents = "auto";
@@ -149,6 +149,29 @@ class modal extends HTMLElement {
   }
 
   htmlparser(data) {
+    const video =
+      data.video !== undefined
+        ? `
+<video class="video-content" controls>
+<source src="` +
+          data.video +
+          `" >
+</video>
+`
+        : `<a href="` +
+          data.link +
+          `">
+          <div class="bg-overlay2"></div>
+          <div class="image-description">
+            클릭시<br>github페이지로<br>이동됩니다.
+          </div>
+          <img class="video-content image-content" src="` +
+          data.image +
+          `" alt="` +
+          data.title +
+          `"></a>`;
+
+    console.log(video);
     return (
       `
     <div id="modal" class="modal">
@@ -166,17 +189,14 @@ class modal extends HTMLElement {
       ` -</h3>
         </div>
         <div class="modal-body">
-          <div class="video">
-            <video class="video-content" controls>
-              <source src="` +
-      data.video +
-      `" >
-            </video>
-            <p>` +
+          <div class="video">` +
+      video +
+      `<p>` +
       data.date +
       `</p>
           </div>
           <div class="projectDesciption">
+            <h2 class="contribution">[제가 작업한 부분]</h2><br>
             <ul>
             ` +
       this.work(data) +

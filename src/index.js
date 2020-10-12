@@ -10,6 +10,7 @@ import "./assets/images/ItForYou.png";
 import "./assets/images/Newspace.png";
 import "./assets/images/Ssafy-Shopper.png";
 import "./assets/images/Unithis.png";
+import "./assets/images/프로그래머스.png";
 import "./assets/images/진행중.png";
 import "./assets/favicon.png";
 
