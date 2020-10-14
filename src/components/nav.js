@@ -17,6 +17,7 @@ class nav extends HTMLElement {
         <li><a href="#" class="navbtn active">Home</a></li>
         <li><a href="#" class="navbtn">About</a></li>
         <li><a href="#" class="navbtn">Skill</a></li>
+        <li><a href="https://github.com/yg1110/Portfolio" class="navbtn">사이트 소개</a></li>
     </ul>
     `;
   }
@@ -24,6 +25,7 @@ class nav extends HTMLElement {
   addClickEvent() {
     const a = document.querySelectorAll(".navbtn");
     [...a].forEach((v, i) => {
+      if (i === a.length - 1) return;
       v.addEventListener("click", () => {
         const active = document.querySelector(".active");
         active.style.pointerEvents = "auto";

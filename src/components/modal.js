@@ -158,9 +158,8 @@ class modal extends HTMLElement {
 </video>
 `
         : `<a href="` +
-          data.link +
-          `">
-          <div class="bg-overlay2"></div>
+          data.repositoryLink +
+          `" target="_blank">
           <div class="image-description">
             클릭시<br>github페이지로<br>이동됩니다.
           </div>
@@ -170,6 +169,12 @@ class modal extends HTMLElement {
           data.title +
           `"></a>`;
 
+    const repositoryLink =
+      data.repositoryLink !== undefined
+        ? `<a class="repositoryLink" href="` +
+          data.repositoryLink +
+          `" target="_black">- 저장소 링크 -</a>`
+        : ``;
     return (
       `
     <div id="modal" class="modal">
@@ -191,8 +196,9 @@ class modal extends HTMLElement {
       video +
       `<p>` +
       data.date +
-      `</p>
-          </div>
+      `</p>` +
+      repositoryLink +
+      `</div>
           <div class="projectDesciption">
             <h2 class="contribution">[제가 작업한 부분]</h2><br>
             <ul>

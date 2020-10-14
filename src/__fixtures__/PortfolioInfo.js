@@ -103,6 +103,7 @@ export const PortfolioInfo = [
     subTitle: "물품 교환 플랫폼 서비스",
     video: "video/Unithis.mp4",
     date: "2020.08. ~ 2020.08. (4주)",
+    repositoryLink: "https://github.com/AfterSSAFY/Unithis",
     work: [
       "회원가입 및 로그인 UI / UX 구현",
       "메인화면 UI / UX 구현",
@@ -131,7 +132,7 @@ export const PortfolioInfo = [
     subTitle: "React 학습용 클론 프로젝트",
     date: "2020.09. ~ 2020.10. (5주)",
     image: "./images/프로그래머스.png",
-    link: "https://github.com/gong-clone/programmers-clone",
+    repositoryLink: "https://github.com/gong-clone/programmers-clone",
     work: [
       "채용프로그램 UI / UX 구현",
       "프로그래머스 이벤트 배너 UI / UX 구현",

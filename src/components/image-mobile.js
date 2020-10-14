@@ -25,6 +25,34 @@ class image extends HTMLElement {
   }
 
   htmlparser(data) {
+    const video =
+      data.video !== undefined
+        ? `
+<video class="video-content" controls>
+<source src="` +
+          data.video +
+          `" >
+</video>
+`
+        : `<a href="` +
+          data.repositoryLink +
+          `" target="_blank">
+          <div class="image-description">
+            클릭시<br>github페이지로<br>이동됩니다.
+          </div>
+          <img class="video-content image-content" src="` +
+          data.image +
+          `" alt="` +
+          data.title +
+          `"></a>`;
+
+    const repositoryLink =
+      data.repositoryLink !== undefined
+        ? `<a class="repositoryLink" href="` +
+          data.repositoryLink +
+          `" target="_black">- 저장소 링크 -</a>`
+        : ``;
+
     return (
       `
     <div class="modal-content">
@@ -40,16 +68,13 @@ class image extends HTMLElement {
       this.tag(data) +
       `
     <div class="modal-body">
-      <div class="video">
-        <video class="video-content" controls allowfullscreen>
-          <source src="` +
-      data.video +
-      `" >
-        </video>
-        <p>` +
+      <div class="video">` +
+      video +
+      `<p>` +
       data.date +
-      `</p>
-      </div>
+      `</p>` +
+      repositoryLink +
+      `</div>
         <ul class="worklist">
         ` +
       this.work(data) +
