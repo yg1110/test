@@ -1,6 +1,6 @@
 import { PortfolioInfo } from "../__fixtures__/PortfolioInfo";
 
-class portfolio extends HTMLElement {
+class portfolio2020 extends HTMLElement {
   constructor() {
     super();
   }
@@ -21,6 +21,7 @@ class portfolio extends HTMLElement {
       mobileImageContent[i].setAttribute("data-props", JSON.stringify(data));
     });
   }
+
   htmlparser(PortfolioInfo) {
     let imageContent = "";
     let modalContent = "";
@@ -45,7 +46,7 @@ class portfolio extends HTMLElement {
   }
 }
 
-export default portfolio;
+export default portfolio2020;
 
 // customElements.get("router-view") ||
 //   customElements.define("router-view", portfolio);

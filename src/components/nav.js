@@ -14,7 +14,8 @@ class nav extends HTMLElement {
   htmlparser() {
     return `
     <ul>
-        <li><a href="#" class="navbtn active">Home</a></li>
+        <li><a href="#" class="navbtn active">2019 ~ 2020</a></li>
+        <li><a href="#" class="navbtn">2021</a></li>
         <li><a href="#" class="navbtn">About</a></li>
         <li><a href="#" class="navbtn">Skill</a></li>
         <li><a href="https://github.com/yg1110/Portfolio" class="navbtn">사이트 소개</a></li>
