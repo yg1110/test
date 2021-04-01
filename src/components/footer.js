@@ -17,9 +17,6 @@ class footer extends HTMLElement {
         <a href="https://github.com/yg1110" title="GitHub">
             <i class="fa fa-github"></i>
         </a>
-        <a href="tel:010-0000-0000" title="phone">
-            <i class="fa fa-phone"></i>
-        </a>
         <a href="mailto:younggil9488@gmail.com" title="email">
             <i class="fa fa-envelope"></i>
         </a>

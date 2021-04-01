@@ -20,7 +20,7 @@ class about extends HTMLElement {
     <div class="academic-content">
       <h2 class="academic-title">경력 요약</h2>
       <div class="academic-description">
-        <div class="academic-description-date">2013 ~ 2018</div>
+        <div class="academic-description-date">2013 ~ 2019</div>
         <div class="academic-description-name">한밭대학교</div>
         <div class="academic-description-department">컴퓨터공학과 졸업</div>
       </div>
@@ -39,11 +39,30 @@ class about extends HTMLElement {
     </div>
 
     <div class="academic-content">
-      <h2 class="academic-title">경력상세</h2>
+      <h2 class="academic-title">경력 상세</h2>
+
       <div class="academic-description">
-        <div class="academic-description-date">2019.08</div>
-        <div class="academic-description-name">정보 처리 기사</div>
-        <div class="academic-description-department">최종합격</div>
+        <div class="academic-description-date">RFTM</div>
+        <div class="academic-description-name">수신기 제어 테스트 프로그램(C#, WPF)</div>
+        <div class="academic-description-department">제어 로직 및 UI 구현</div>
+      </div>
+
+      <div class="academic-description">
+        <div class="academic-description-date">EdgeRF</div>
+        <div class="academic-description-name">수신기 제어 프로그램(C#, WPF)</div>
+        <div class="academic-description-department">UI 구현</div>
+      </div>
+
+      <div class="academic-description">
+        <div class="academic-description-date">FMS</div>
+        <div class="academic-description-name">온습도, 방향 탐지하는 장비 모니터링 웹사이트(React)</div>
+        <div class="academic-description-department">UI 구현</div>
+      </div>
+
+      <div class="academic-description">
+        <div class="academic-description-date">ML Front</div>
+        <div class="academic-description-name">불법전파 구분하고 학습시키는 웹사이트(React)</div>
+        <div class="academic-description-department">UI 구현</div>
       </div>
     </div>
   </div>
